@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31402.337
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClinicaTerapeutica.Data", "ClinicaTerapeutica.Data\ClinicaTerapeutica.Data.csproj", "{C929E767-96E7-49E3-ABEF-364541CF10A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClinicaTerapeutica.Interface", "ClinicaTerapeutica.Interface\ClinicaTerapeutica.Interface.csproj", "{C3272C12-795A-492D-8129-58BBE1DA1B7F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C929E767-96E7-49E3-ABEF-364541CF10A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C929E767-96E7-49E3-ABEF-364541CF10A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C929E767-96E7-49E3-ABEF-364541CF10A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C929E767-96E7-49E3-ABEF-364541CF10A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3272C12-795A-492D-8129-58BBE1DA1B7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3272C12-795A-492D-8129-58BBE1DA1B7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3272C12-795A-492D-8129-58BBE1DA1B7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3272C12-795A-492D-8129-58BBE1DA1B7F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3E8A1800-6676-4F5C-9281-6B12B595D632}
+	EndGlobalSection
+EndGlobal
