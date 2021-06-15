@@ -13,9 +13,9 @@ using System.Windows.Forms;
 
 namespace ClinicaTerapeutica.Interface
 {
-    public partial class Form1 : Form
+    public partial class inicioSessao : Form
     {
-        public Form1()
+        public inicioSessao()
         {
             InitializeComponent();
         }
@@ -51,6 +51,41 @@ namespace ClinicaTerapeutica.Interface
         private void button1_Click(object sender, EventArgs e)
         {
             login();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void inicioSessao_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
