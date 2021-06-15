@@ -27,3 +27,32 @@ C:\Users\ricar\OneDrive\Ambiente de Trabalho\Ricardo\Uni\1- Repositório Git\Pro
 C:\Users\ricar\OneDrive\Ambiente de Trabalho\Ricardo\Uni\1- Repositório Git\ProjetoEngenhariaSoftware\ClinicaTerapeutica\ClinicaTerapeutica.Interface\obj\Debug\net5.0-windows\ref\ClinicaTerapeutica.Interface.dll
 C:\Users\ricar\OneDrive\Ambiente de Trabalho\Ricardo\Uni\1- Repositório Git\ProjetoEngenhariaSoftware\ClinicaTerapeutica\ClinicaTerapeutica.Interface\obj\Debug\net5.0-windows\ClinicaTerapeutica.Interface.pdb
 C:\Users\ricar\OneDrive\Ambiente de Trabalho\Ricardo\Uni\1- Repositório Git\ProjetoEngenhariaSoftware\ClinicaTerapeutica\ClinicaTerapeutica.Interface\obj\Debug\net5.0-windows\ClinicaTerapeutica.Interface.genruntimeconfig.cache
+C:\Users\marco\source\repos\Test\ClinicaTerapeutica\ClinicaTerapeutica.Interface\bin\Debug\net5.0-windows\ClinicaTerapeutica.Interface.exe
+C:\Users\marco\source\repos\Test\ClinicaTerapeutica\ClinicaTerapeutica.Interface\bin\Debug\net5.0-windows\ClinicaTerapeutica.Interface.deps.json
+C:\Users\marco\source\repos\Test\ClinicaTerapeutica\ClinicaTerapeutica.Interface\bin\Debug\net5.0-windows\ClinicaTerapeutica.Interface.runtimeconfig.json
+C:\Users\marco\source\repos\Test\ClinicaTerapeutica\ClinicaTerapeutica.Interface\bin\Debug\net5.0-windows\ClinicaTerapeutica.Interface.runtimeconfig.dev.json
+C:\Users\marco\source\repos\Test\ClinicaTerapeutica\ClinicaTerapeutica.Interface\bin\Debug\net5.0-windows\ClinicaTerapeutica.Interface.dll
+C:\Users\marco\source\repos\Test\ClinicaTerapeutica\ClinicaTerapeutica.Interface\bin\Debug\net5.0-windows\ref\ClinicaTerapeutica.Interface.dll
+C:\Users\marco\source\repos\Test\ClinicaTerapeutica\ClinicaTerapeutica.Interface\bin\Debug\net5.0-windows\ClinicaTerapeutica.Interface.pdb
+C:\Users\marco\source\repos\Test\ClinicaTerapeutica\ClinicaTerapeutica.Interface\bin\Debug\net5.0-windows\BouncyCastle.Crypto.dll
+C:\Users\marco\source\repos\Test\ClinicaTerapeutica\ClinicaTerapeutica.Interface\bin\Debug\net5.0-windows\Google.Protobuf.dll
+C:\Users\marco\source\repos\Test\ClinicaTerapeutica\ClinicaTerapeutica.Interface\bin\Debug\net5.0-windows\K4os.Compression.LZ4.dll
+C:\Users\marco\source\repos\Test\ClinicaTerapeutica\ClinicaTerapeutica.Interface\bin\Debug\net5.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\marco\source\repos\Test\ClinicaTerapeutica\ClinicaTerapeutica.Interface\bin\Debug\net5.0-windows\K4os.Hash.xxHash.dll
+C:\Users\marco\source\repos\Test\ClinicaTerapeutica\ClinicaTerapeutica.Interface\bin\Debug\net5.0-windows\MySql.Data.dll
+C:\Users\marco\source\repos\Test\ClinicaTerapeutica\ClinicaTerapeutica.Interface\bin\Debug\net5.0-windows\Ubiety.Dns.Core.dll
+C:\Users\marco\source\repos\Test\ClinicaTerapeutica\ClinicaTerapeutica.Interface\bin\Debug\net5.0-windows\Zstandard.Net.dll
+C:\Users\marco\source\repos\Test\ClinicaTerapeutica\ClinicaTerapeutica.Interface\bin\Debug\net5.0-windows\ClinicaTerapeutica.Data.dll
+C:\Users\marco\source\repos\Test\ClinicaTerapeutica\ClinicaTerapeutica.Interface\bin\Debug\net5.0-windows\ClinicaTerapeutica.Data.pdb
+C:\Users\marco\source\repos\Test\ClinicaTerapeutica\ClinicaTerapeutica.Interface\obj\Debug\net5.0-windows\ClinicaTerapeutica.Interface.csproj.AssemblyReference.cache
+C:\Users\marco\source\repos\Test\ClinicaTerapeutica\ClinicaTerapeutica.Interface\obj\Debug\net5.0-windows\ClinicaTerapeutica.Interface.csproj.GenerateResource.cache
+C:\Users\marco\source\repos\Test\ClinicaTerapeutica\ClinicaTerapeutica.Interface\obj\Debug\net5.0-windows\ClinicaTerapeutica.Interface.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marco\source\repos\Test\ClinicaTerapeutica\ClinicaTerapeutica.Interface\obj\Debug\net5.0-windows\ClinicaTerapeutica.Interface.AssemblyInfoInputs.cache
+C:\Users\marco\source\repos\Test\ClinicaTerapeutica\ClinicaTerapeutica.Interface\obj\Debug\net5.0-windows\ClinicaTerapeutica.Interface.AssemblyInfo.cs
+C:\Users\marco\source\repos\Test\ClinicaTerapeutica\ClinicaTerapeutica.Interface\obj\Debug\net5.0-windows\ClinicaTerapeutica.Interface.csproj.CoreCompileInputs.cache
+C:\Users\marco\source\repos\Test\ClinicaTerapeutica\ClinicaTerapeutica.Interface\obj\Debug\net5.0-windows\ClinicaTerapeutica.Interface.csproj.CopyComplete
+C:\Users\marco\source\repos\Test\ClinicaTerapeutica\ClinicaTerapeutica.Interface\obj\Debug\net5.0-windows\ClinicaTerapeutica.Interface.dll
+C:\Users\marco\source\repos\Test\ClinicaTerapeutica\ClinicaTerapeutica.Interface\obj\Debug\net5.0-windows\ref\ClinicaTerapeutica.Interface.dll
+C:\Users\marco\source\repos\Test\ClinicaTerapeutica\ClinicaTerapeutica.Interface\obj\Debug\net5.0-windows\ClinicaTerapeutica.Interface.pdb
+C:\Users\marco\source\repos\Test\ClinicaTerapeutica\ClinicaTerapeutica.Interface\obj\Debug\net5.0-windows\ClinicaTerapeutica.Interface.genruntimeconfig.cache
+C:\Users\marco\source\repos\Test\ClinicaTerapeutica\ClinicaTerapeutica.Interface\obj\Debug\net5.0-windows\ClinicaTerapeutica.Interface.inicioSessao.resources
