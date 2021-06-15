@@ -27,7 +27,7 @@ namespace ClinicaTerapeutica.Interface
             try
             {
                 ExecutorQueries query = new ExecutorQueries();
-                reader = query.ExecutarQuery(new QueryObterPessoa("Marcos"));
+                reader = query.ObterResultadoQuery(new QueryObterUtilizador("Marcos"));
 
                 if (reader.HasRows)
                 {

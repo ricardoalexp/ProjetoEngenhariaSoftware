@@ -13,11 +13,10 @@ namespace ClinicaTerapeutica.Data.GestorQueries
             conexao = ConectorBDMySQL.ConexaoBD;
         }
 
-        public MySqlDataReader ExecutarQuery(IQuery query)
+        public MySqlDataReader ObterResultadoQuery(IQuery query)
         {
-            MySqlDataReader leitorQuery = null;
-            MySqlCommand commandDatabase = new MySqlCommand(query.GetQueryResult(), conexao);
-            leitorQuery = commandDatabase.ExecuteReader();
+            MySqlCommand commandDatabase = new MySqlCommand(query.ObterQuery(), conexao);
+            MySqlDataReader leitorQuery = commandDatabase.ExecuteReader();
 
             return leitorQuery;
         }

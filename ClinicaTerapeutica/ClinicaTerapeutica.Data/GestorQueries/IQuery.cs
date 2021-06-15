@@ -6,6 +6,6 @@ namespace ClinicaTerapeutica.Data.GestorQueries
 {
     public interface IQuery
     {
-        string GetQueryResult();
+        string ObterQuery();
     }
 }
