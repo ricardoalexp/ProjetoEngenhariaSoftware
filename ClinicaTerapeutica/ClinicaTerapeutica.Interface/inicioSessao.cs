@@ -8,30 +8,49 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ClinicaTerapeutica.Interface.Terapeuta;
+using ClinicaTerapeutica.Interface.Paciente;
 
 namespace ClinicaTerapeutica.Interface
 {
-    public partial class inicioSessao : Form
+    public partial class InicioSessao : Form
     {
-        public inicioSessao()
+        public InicioSessao()
         {
             InitializeComponent();
         }
 
         public void login()
-        {
+        {         
+            if (textBoxUser.Text.Equals("bla") && textBoxPassword.Text.Equals("123")) // Teste!!!
+            {
+                if(checkBoxTerapeuta.Checked)
+                { 
+                    MessageBox.Show("Bem vindo terapeuta!");
 
-           
-            try
-            {
-                
+                    //Transita para o menu inicial do terapeuta
+                    this.Hide();
+                    MenuInicialT menu = new MenuInicialT();
+                    menu.ShowDialog();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Bem vindo paciente!");
+
+                    //Transita para o menu inicial do paciente
+                    this.Hide();
+                    MenuInicialP menu = new MenuInicialP();
+                    menu.ShowDialog();
+                    this.Close();
+                }
             }
-            catch(Exception ex)
+            else
             {
-                MessageBox.Show(ex.Message);
-            }
+                MessageBox.Show("Credenciais incorretas!\n" +
+                    "Tente outra vez");
+            }                
         }
-      
 
         private void button1_Click(object sender, EventArgs e)
         {
