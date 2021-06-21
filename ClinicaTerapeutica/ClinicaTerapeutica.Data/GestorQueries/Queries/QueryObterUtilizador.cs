@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ClinicaTerapeutica.Data.GestorQueries.Queries
 {
-    public class QueryObterUtilizador : IQuery
+    class QueryObterUtilizador : IQuery
     {
         private string query;
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClinicaTerapeutica.Data.GestorQueries.Queries
 {
-    public class QueryAutenticarTerapeuta : IQuery
+    class QueryAutenticarTerapeuta : IQuery
 
     {
         private string query;

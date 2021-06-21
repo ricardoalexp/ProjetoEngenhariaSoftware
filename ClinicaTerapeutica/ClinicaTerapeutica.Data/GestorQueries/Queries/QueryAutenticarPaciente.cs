@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ClinicaTerapeutica.Data.GestorQueries.Queries
 {
-    public class QueryAutenticarPaciente : IQuery
+    class QueryAutenticarPaciente : IQuery
     {
         private string query;
         public QueryAutenticarPaciente(int idPaciente, string password)
