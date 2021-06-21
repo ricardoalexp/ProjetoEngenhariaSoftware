@@ -1,5 +1,4 @@
 ﻿using ClinicaTerapeutica.Data.GestorQueries;
-using ClinicaTerapeutica.Data.GestorQueries.Queries;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
@@ -20,7 +19,7 @@ namespace ClinicaTerapeutica.Funcionalidade.Autenticador
         }
         public bool AutenticarPaciente(int id, string password)
         {
-            dadosQuery = executorQueries.ObterResultadoQuery(new QueryAutenticarPaciente(id, password));
+            dadosQuery = executorQueries.ResultadoAutenticarPaciente(id, password).ObterResultado();
             bool result = dadosQuery.HasRows ? true : false;
 
             return result;
@@ -28,7 +27,7 @@ namespace ClinicaTerapeutica.Funcionalidade.Autenticador
         }
         public bool AutenticarTerapeuta(int id, string password)
         {
-            dadosQuery = executorQueries.ObterResultadoQuery(new QueryAutenticarTerapeuta(id, password));
+            dadosQuery = executorQueries.ResultadoAutenticarTerapeuta(id, password).ObterResultado();
             bool result = dadosQuery.HasRows ? true : false;
 
             return result;
