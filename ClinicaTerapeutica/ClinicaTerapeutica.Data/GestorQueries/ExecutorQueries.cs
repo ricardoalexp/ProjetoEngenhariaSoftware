@@ -9,17 +9,11 @@ namespace ClinicaTerapeutica.Data.GestorQueries
 {
     public class ExecutorQueries
     {
-        private MySqlConnection conexao;
-
         private IQuery querySelecionada;
-        public ExecutorQueries()
-        {
-            conexao = ConectorBDMySQL.ConexaoBD;
-        }
 
         private IResultadoQuery ExecutarQuery(IQuery query)
         {
-
+            MySqlConnection conexao = ConectorBDMySQL.GetInstance.GetConnection();
             MySqlCommand commandDatabase = new MySqlCommand(query.ObterQuery(), conexao);
             MySqlDataReader leitorQuery = commandDatabase.ExecuteReader();
 
@@ -30,6 +24,7 @@ namespace ClinicaTerapeutica.Data.GestorQueries
         private IResultadoInsercao ExecutarInsercao(IQuery query)
         {
             string queryAlterada = query.ObterQuery() + "SELECT CAST(scope_identity() AS int)";
+            MySqlConnection conexao = ConectorBDMySQL.GetInstance.GetConnection();
             MySqlCommand commandDatabase = new MySqlCommand(queryAlterada, conexao);
 
             int newId;
@@ -42,16 +37,19 @@ namespace ClinicaTerapeutica.Data.GestorQueries
                 return new ResultadoInsercao(0);
             }
         }
+
         public IResultadoQuery ResultadoAutenticarPaciente(int id, string password)
         {
             querySelecionada = new QueryAutenticarPaciente(id, password);
             return ExecutarQuery(querySelecionada);
         }
+
         public IResultadoQuery ResultadoAutenticarTerapeuta(int id, string password)
         {
-            querySelecionada = new QueryAutenticarPaciente(id, password);
+            querySelecionada = new QueryAutenticarTerapeuta(id, password);
             return ExecutarQuery(querySelecionada);
         }
+
         public IResultadoInsercao ResultadoInserirUtilizador(string nome, string password, string dataNascimento, string email, int telefone)
         {
             querySelecionada = new InsercaoUtilizador(nome, password, dataNascimento, email, telefone);

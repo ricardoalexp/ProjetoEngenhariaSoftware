@@ -12,7 +12,7 @@ namespace ClinicaTerapeutica.Data.GestorQueries.Queries
         private string query;
         public QueryAutenticarPaciente(int idPaciente, string password)
         {
-            query = "SELECT * FROM utilizador,paciente WHERE utilizador.id = paciente.utilizador_id AND utilizador.id = " + idPaciente + " AND utilizador.password = '" + password + "'";
+            query = "SELECT * FROM utilizador, paciente WHERE utilizador.id = paciente.utilizador_id AND utilizador.id = " + idPaciente + " AND utilizador.password = '" + password + "'";
         }
         public string ObterQuery()
         {

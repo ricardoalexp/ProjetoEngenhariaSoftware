@@ -19,9 +19,9 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
 
         private void logOut_Click(object sender, EventArgs e) //Logout
         {
-            //Transita para o menu Ver perscrições
+            //Transita para o menu Inicio Sessao
             this.Hide();
-            VerPerscricoesP menu = new VerPerscricoesP();
+            InicioSessao menu = new InicioSessao();
             menu.ShowDialog();
             this.Close();
         }

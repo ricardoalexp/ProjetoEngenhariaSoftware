@@ -21,7 +21,7 @@ namespace ClinicaTerapeutica.Funcionalidade.CriadorDeUtilizadores
             {
                 return new Paciente();
             }
-            else {  }
+            else { return new Paciente(); } //alterar
         }
         private bool VerificarExistenciaEmail(string email)
         {

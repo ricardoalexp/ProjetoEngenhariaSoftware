@@ -94,7 +94,6 @@ namespace ClinicaTerapeutica.Interface
             // 
             this.textBoxPassword.Location = new System.Drawing.Point(184, 138);
             this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.PasswordChar = '*';
             this.textBoxPassword.Size = new System.Drawing.Size(100, 23);
             this.textBoxPassword.TabIndex = 5;
             this.textBoxPassword.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
@@ -110,7 +109,7 @@ namespace ClinicaTerapeutica.Interface
             this.checkBoxTerapeuta.UseVisualStyleBackColor = true;
             this.checkBoxTerapeuta.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
-            // inicioSessao
+            // InicioSessao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -123,7 +122,7 @@ namespace ClinicaTerapeutica.Interface
             this.Controls.Add(this.textBoxUser);
             this.Controls.Add(this.button1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "inicioSessao";
+            this.Name = "InicioSessao";
             this.Text = "Sistema Clinica Terapeutica blabla123";
             this.Load += new System.EventHandler(this.inicioSessao_Load);
             this.ResumeLayout(false);

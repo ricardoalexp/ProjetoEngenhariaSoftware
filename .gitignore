@@ -3,3 +3,10 @@
 ################################################################################
 
 /.vs
+/ClinicaTerapeutica/.vs/ClinicaTerapeutica
+/ClinicaTerapeutica/ClinicaTerapeutica.Data/bin/Debug/net5.0
+/ClinicaTerapeutica/ClinicaTerapeutica.Data/obj
+/ClinicaTerapeutica/ClinicaTerapeutica.Funcionalidade/bin/Debug/net5.0
+/ClinicaTerapeutica/ClinicaTerapeutica.Funcionalidade/obj
+/ClinicaTerapeutica/ClinicaTerapeutica.Interface/bin/Debug/net5.0-windows
+/ClinicaTerapeutica/ClinicaTerapeutica.Interface/obj
