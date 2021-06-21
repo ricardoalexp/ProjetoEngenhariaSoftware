@@ -10,4 +10,8 @@
     <ProjectReference Include="..\ClinicaTerapeutica.Funcionalidade\ClinicaTerapeutica.Funcionalidade.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Terapeuta\" />
+  </ItemGroup>
+
 </Project>

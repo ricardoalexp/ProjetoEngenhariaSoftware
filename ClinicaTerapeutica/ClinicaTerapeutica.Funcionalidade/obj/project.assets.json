@@ -898,19 +898,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ricar\\.nuget\\packages\\": {}
+    "C:\\Users\\marco\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ricar\\OneDrive\\Ambiente de Trabalho\\Ricardo\\Uni\\1- Repositório Git\\ProjetoEngenhariaSoftware\\ClinicaTerapeutica\\ClinicaTerapeutica.Funcionalidade\\ClinicaTerapeutica.Funcionalidade.csproj",
+      "projectUniqueName": "C:\\Users\\marco\\Documents\\Git\\ProjetoEngenhariaSoftware\\ClinicaTerapeutica\\ClinicaTerapeutica.Funcionalidade\\ClinicaTerapeutica.Funcionalidade.csproj",
       "projectName": "ClinicaTerapeutica.Funcionalidade",
-      "projectPath": "C:\\Users\\ricar\\OneDrive\\Ambiente de Trabalho\\Ricardo\\Uni\\1- Repositório Git\\ProjetoEngenhariaSoftware\\ClinicaTerapeutica\\ClinicaTerapeutica.Funcionalidade\\ClinicaTerapeutica.Funcionalidade.csproj",
-      "packagesPath": "C:\\Users\\ricar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ricar\\OneDrive\\Ambiente de Trabalho\\Ricardo\\Uni\\1- Repositório Git\\ProjetoEngenhariaSoftware\\ClinicaTerapeutica\\ClinicaTerapeutica.Funcionalidade\\obj\\",
+      "projectPath": "C:\\Users\\marco\\Documents\\Git\\ProjetoEngenhariaSoftware\\ClinicaTerapeutica\\ClinicaTerapeutica.Funcionalidade\\ClinicaTerapeutica.Funcionalidade.csproj",
+      "packagesPath": "C:\\Users\\marco\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\marco\\Documents\\Git\\ProjetoEngenhariaSoftware\\ClinicaTerapeutica\\ClinicaTerapeutica.Funcionalidade\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ricar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\marco\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -924,8 +924,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\ricar\\OneDrive\\Ambiente de Trabalho\\Ricardo\\Uni\\1- Repositório Git\\ProjetoEngenhariaSoftware\\ClinicaTerapeutica\\ClinicaTerapeutica.Data\\ClinicaTerapeutica.Data.csproj": {
-              "projectPath": "C:\\Users\\ricar\\OneDrive\\Ambiente de Trabalho\\Ricardo\\Uni\\1- Repositório Git\\ProjetoEngenhariaSoftware\\ClinicaTerapeutica\\ClinicaTerapeutica.Data\\ClinicaTerapeutica.Data.csproj"
+            "C:\\Users\\marco\\Documents\\Git\\ProjetoEngenhariaSoftware\\ClinicaTerapeutica\\ClinicaTerapeutica.Data\\ClinicaTerapeutica.Data.csproj": {
+              "projectPath": "C:\\Users\\marco\\Documents\\Git\\ProjetoEngenhariaSoftware\\ClinicaTerapeutica\\ClinicaTerapeutica.Data\\ClinicaTerapeutica.Data.csproj"
             }
           }
         }

@@ -22,3 +22,15 @@ C:\Users\marco\source\repos\Test\ClinicaTerapeutica\ClinicaTerapeutica.Data\obj\
 C:\Users\marco\source\repos\Test\ClinicaTerapeutica\ClinicaTerapeutica.Data\obj\Debug\net5.0\ClinicaTerapeutica.Data.dll
 C:\Users\marco\source\repos\Test\ClinicaTerapeutica\ClinicaTerapeutica.Data\obj\Debug\net5.0\ref\ClinicaTerapeutica.Data.dll
 C:\Users\marco\source\repos\Test\ClinicaTerapeutica\ClinicaTerapeutica.Data\obj\Debug\net5.0\ClinicaTerapeutica.Data.pdb
+C:\Users\marco\Documents\Git\ProjetoEngenhariaSoftware\ClinicaTerapeutica\ClinicaTerapeutica.Data\bin\Debug\net5.0\ClinicaTerapeutica.Data.deps.json
+C:\Users\marco\Documents\Git\ProjetoEngenhariaSoftware\ClinicaTerapeutica\ClinicaTerapeutica.Data\bin\Debug\net5.0\ClinicaTerapeutica.Data.dll
+C:\Users\marco\Documents\Git\ProjetoEngenhariaSoftware\ClinicaTerapeutica\ClinicaTerapeutica.Data\bin\Debug\net5.0\ref\ClinicaTerapeutica.Data.dll
+C:\Users\marco\Documents\Git\ProjetoEngenhariaSoftware\ClinicaTerapeutica\ClinicaTerapeutica.Data\bin\Debug\net5.0\ClinicaTerapeutica.Data.pdb
+C:\Users\marco\Documents\Git\ProjetoEngenhariaSoftware\ClinicaTerapeutica\ClinicaTerapeutica.Data\obj\Debug\net5.0\ClinicaTerapeutica.Data.csproj.AssemblyReference.cache
+C:\Users\marco\Documents\Git\ProjetoEngenhariaSoftware\ClinicaTerapeutica\ClinicaTerapeutica.Data\obj\Debug\net5.0\ClinicaTerapeutica.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marco\Documents\Git\ProjetoEngenhariaSoftware\ClinicaTerapeutica\ClinicaTerapeutica.Data\obj\Debug\net5.0\ClinicaTerapeutica.Data.AssemblyInfoInputs.cache
+C:\Users\marco\Documents\Git\ProjetoEngenhariaSoftware\ClinicaTerapeutica\ClinicaTerapeutica.Data\obj\Debug\net5.0\ClinicaTerapeutica.Data.AssemblyInfo.cs
+C:\Users\marco\Documents\Git\ProjetoEngenhariaSoftware\ClinicaTerapeutica\ClinicaTerapeutica.Data\obj\Debug\net5.0\ClinicaTerapeutica.Data.csproj.CoreCompileInputs.cache
+C:\Users\marco\Documents\Git\ProjetoEngenhariaSoftware\ClinicaTerapeutica\ClinicaTerapeutica.Data\obj\Debug\net5.0\ClinicaTerapeutica.Data.dll
+C:\Users\marco\Documents\Git\ProjetoEngenhariaSoftware\ClinicaTerapeutica\ClinicaTerapeutica.Data\obj\Debug\net5.0\ref\ClinicaTerapeutica.Data.dll
+C:\Users\marco\Documents\Git\ProjetoEngenhariaSoftware\ClinicaTerapeutica\ClinicaTerapeutica.Data\obj\Debug\net5.0\ClinicaTerapeutica.Data.pdb

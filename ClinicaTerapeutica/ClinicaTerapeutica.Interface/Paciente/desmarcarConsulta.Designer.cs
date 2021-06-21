@@ -50,7 +50,7 @@ namespace ClinicaTerapeutica.Interface
             this.checkedListBox1.FormattingEnabled = true;
             this.checkedListBox1.Location = new System.Drawing.Point(12, 52);
             this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(199, 148);
+            this.checkedListBox1.Size = new System.Drawing.Size(227, 148);
             this.checkedListBox1.TabIndex = 1;
             // 
             // voltarAtras
@@ -65,7 +65,7 @@ namespace ClinicaTerapeutica.Interface
             // 
             // desmarcarSelecionados
             // 
-            this.desmarcarSelecionados.Location = new System.Drawing.Point(126, 223);
+            this.desmarcarSelecionados.Location = new System.Drawing.Point(154, 223);
             this.desmarcarSelecionados.Name = "desmarcarSelecionados";
             this.desmarcarSelecionados.Size = new System.Drawing.Size(85, 55);
             this.desmarcarSelecionados.TabIndex = 3;
@@ -77,7 +77,7 @@ namespace ClinicaTerapeutica.Interface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(227, 298);
+            this.ClientSize = new System.Drawing.Size(251, 298);
             this.Controls.Add(this.desmarcarSelecionados);
             this.Controls.Add(this.voltarAtras);
             this.Controls.Add(this.checkedListBox1);

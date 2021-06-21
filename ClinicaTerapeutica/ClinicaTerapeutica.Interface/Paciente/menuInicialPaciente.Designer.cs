@@ -33,7 +33,7 @@ namespace ClinicaTerapeutica.Interface
             this.verPerscricoes = new System.Windows.Forms.Button();
             this.tituloBemVindo = new System.Windows.Forms.Label();
             this.marcarConsulta = new System.Windows.Forms.Button();
-            this.cancelarConsulta = new System.Windows.Forms.Button();
+            this.desmarcarConsulta = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // verConsultas
@@ -79,22 +79,23 @@ namespace ClinicaTerapeutica.Interface
             this.marcarConsulta.UseVisualStyleBackColor = true;
             this.marcarConsulta.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // cancelarConsulta
+            // desmarcarConsulta
             // 
-            this.cancelarConsulta.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.cancelarConsulta.Location = new System.Drawing.Point(195, 184);
-            this.cancelarConsulta.Name = "cancelarConsulta";
-            this.cancelarConsulta.Size = new System.Drawing.Size(124, 64);
-            this.cancelarConsulta.TabIndex = 4;
-            this.cancelarConsulta.Text = "Cancelar Consulta";
-            this.cancelarConsulta.UseVisualStyleBackColor = true;
+            this.desmarcarConsulta.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.desmarcarConsulta.Location = new System.Drawing.Point(195, 184);
+            this.desmarcarConsulta.Name = "desmarcarConsulta";
+            this.desmarcarConsulta.Size = new System.Drawing.Size(124, 64);
+            this.desmarcarConsulta.TabIndex = 4;
+            this.desmarcarConsulta.Text = "Desmarcar Consulta";
+            this.desmarcarConsulta.UseVisualStyleBackColor = true;
+            this.desmarcarConsulta.Click += new System.EventHandler(this.cancelarConsulta_Click);
             // 
             // menuInicialPaciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(358, 290);
-            this.Controls.Add(this.cancelarConsulta);
+            this.Controls.Add(this.desmarcarConsulta);
             this.Controls.Add(this.marcarConsulta);
             this.Controls.Add(this.tituloBemVindo);
             this.Controls.Add(this.verPerscricoes);
@@ -112,6 +113,6 @@ namespace ClinicaTerapeutica.Interface
         private System.Windows.Forms.Button verPerscricoes;
         private System.Windows.Forms.Label tituloBemVindo;
         private System.Windows.Forms.Button marcarConsulta;
-        private System.Windows.Forms.Button cancelarConsulta;
+        private System.Windows.Forms.Button desmarcarConsulta;
     }
 }

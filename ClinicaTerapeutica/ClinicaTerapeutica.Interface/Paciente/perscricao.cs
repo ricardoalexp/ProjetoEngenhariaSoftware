@@ -10,24 +10,14 @@ using System.Windows.Forms;
 
 namespace ClinicaTerapeutica.Interface
 {
-    public partial class menuInicialPaciente : Form
+    public partial class perscricao : Form
     {
-        public menuInicialPaciente()
+        public perscricao()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
         {
 
         }
