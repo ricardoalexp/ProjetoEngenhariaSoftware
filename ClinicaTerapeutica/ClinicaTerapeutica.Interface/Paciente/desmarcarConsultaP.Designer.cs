@@ -1,7 +1,7 @@
 ﻿
 namespace ClinicaTerapeutica.Interface
 {
-    partial class desmarcarConsulta
+    partial class desmarcarConsultaP
     {
         /// <summary>
         /// Required designer variable.

@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ClinicaTerapeutica.Interface
+namespace ClinicaTerapeutica.Interface.Terapeuta
 {
-    public partial class perscricao : Form
+    public partial class verConsultasT : Form
     {
-        public perscricao()
+        public verConsultasT()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

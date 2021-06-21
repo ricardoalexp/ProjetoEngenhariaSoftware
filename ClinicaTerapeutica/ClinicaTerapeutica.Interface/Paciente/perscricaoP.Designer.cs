@@ -1,7 +1,7 @@
 ﻿
 namespace ClinicaTerapeutica.Interface
 {
-    partial class perscricao
+    partial class perscricaoP
     {
         /// <summary>
         /// Required designer variable.

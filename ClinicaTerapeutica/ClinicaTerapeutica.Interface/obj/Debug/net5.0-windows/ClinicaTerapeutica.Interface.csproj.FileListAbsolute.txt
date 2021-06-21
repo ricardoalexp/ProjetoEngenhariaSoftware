@@ -91,3 +91,7 @@ C:\Users\marco\Documents\Git\ProjetoEngenhariaSoftware\ClinicaTerapeutica\Clinic
 C:\Users\marco\Documents\Git\ProjetoEngenhariaSoftware\ClinicaTerapeutica\ClinicaTerapeutica.Interface\obj\Debug\net5.0-windows\ref\ClinicaTerapeutica.Interface.dll
 C:\Users\marco\Documents\Git\ProjetoEngenhariaSoftware\ClinicaTerapeutica\ClinicaTerapeutica.Interface\obj\Debug\net5.0-windows\ClinicaTerapeutica.Interface.pdb
 C:\Users\marco\Documents\Git\ProjetoEngenhariaSoftware\ClinicaTerapeutica\ClinicaTerapeutica.Interface\obj\Debug\net5.0-windows\ClinicaTerapeutica.Interface.genruntimeconfig.cache
+C:\Users\marco\Documents\Git\ProjetoEngenhariaSoftware\ClinicaTerapeutica\ClinicaTerapeutica.Interface\obj\Debug\net5.0-windows\ClinicaTerapeutica.Interface.perscricao.resources
+C:\Users\marco\Documents\Git\ProjetoEngenhariaSoftware\ClinicaTerapeutica\ClinicaTerapeutica.Interface\obj\Debug\net5.0-windows\ClinicaTerapeutica.Interface.verPerscricoes.resources
+C:\Users\marco\Documents\Git\ProjetoEngenhariaSoftware\ClinicaTerapeutica\ClinicaTerapeutica.Interface\obj\Debug\net5.0-windows\ClinicaTerapeutica.Interface.Paciente.verSessoes.resources
+C:\Users\marco\Documents\Git\ProjetoEngenhariaSoftware\ClinicaTerapeutica\ClinicaTerapeutica.Interface\obj\Debug\net5.0-windows\ClinicaTerapeutica.Interface.Paciente.verTratamentos.resources

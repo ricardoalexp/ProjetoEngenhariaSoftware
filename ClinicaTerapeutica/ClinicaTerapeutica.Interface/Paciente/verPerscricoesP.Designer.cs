@@ -1,7 +1,7 @@
 ﻿
 namespace ClinicaTerapeutica.Interface
 {
-    partial class verPerscricoes
+    partial class verPerscricoesP
     {
         /// <summary>
         /// Required designer variable.

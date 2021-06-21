@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ClinicaTerapeutica.Interface
+namespace ClinicaTerapeutica.Interface.Terapeuta
 {
-    public partial class verPerscricoes : Form
+    public partial class verPerscricoesT : Form
     {
-        public verPerscricoes()
+        public verPerscricoesT()
         {
             InitializeComponent();
         }

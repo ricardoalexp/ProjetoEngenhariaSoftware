@@ -1,7 +1,7 @@
 ﻿
 namespace ClinicaTerapeutica.Interface
 {
-    partial class menuInicialPaciente
+    partial class menuInicialP
     {
         /// <summary>
         /// Required designer variable.
@@ -34,6 +34,8 @@ namespace ClinicaTerapeutica.Interface
             this.tituloBemVindo = new System.Windows.Forms.Label();
             this.marcarConsulta = new System.Windows.Forms.Button();
             this.desmarcarConsulta = new System.Windows.Forms.Button();
+            this.verTratamentos = new System.Windows.Forms.Button();
+            this.verSessoes = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // verConsultas
@@ -61,7 +63,7 @@ namespace ClinicaTerapeutica.Interface
             // 
             this.tituloBemVindo.AutoSize = true;
             this.tituloBemVindo.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tituloBemVindo.Location = new System.Drawing.Point(110, 19);
+            this.tituloBemVindo.Location = new System.Drawing.Point(187, 9);
             this.tituloBemVindo.Name = "tituloBemVindo";
             this.tituloBemVindo.Size = new System.Drawing.Size(132, 32);
             this.tituloBemVindo.TabIndex = 2;
@@ -90,11 +92,35 @@ namespace ClinicaTerapeutica.Interface
             this.desmarcarConsulta.UseVisualStyleBackColor = true;
             this.desmarcarConsulta.Click += new System.EventHandler(this.cancelarConsulta_Click);
             // 
+            // verTratamentos
+            // 
+            this.verTratamentos.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.verTratamentos.Location = new System.Drawing.Point(349, 80);
+            this.verTratamentos.Name = "verTratamentos";
+            this.verTratamentos.Size = new System.Drawing.Size(124, 64);
+            this.verTratamentos.TabIndex = 5;
+            this.verTratamentos.Text = "Ver tratamentos";
+            this.verTratamentos.UseVisualStyleBackColor = true;
+            this.verTratamentos.Click += new System.EventHandler(this.button1_Click_2);
+            // 
+            // verSessoes
+            // 
+            this.verSessoes.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.verSessoes.Location = new System.Drawing.Point(349, 184);
+            this.verSessoes.Name = "verSessoes";
+            this.verSessoes.Size = new System.Drawing.Size(124, 64);
+            this.verSessoes.TabIndex = 6;
+            this.verSessoes.Text = "Ver sessões";
+            this.verSessoes.UseVisualStyleBackColor = true;
+            this.verSessoes.Click += new System.EventHandler(this.button1_Click_3);
+            // 
             // menuInicialPaciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(358, 290);
+            this.ClientSize = new System.Drawing.Size(505, 276);
+            this.Controls.Add(this.verSessoes);
+            this.Controls.Add(this.verTratamentos);
             this.Controls.Add(this.desmarcarConsulta);
             this.Controls.Add(this.marcarConsulta);
             this.Controls.Add(this.tituloBemVindo);
@@ -114,5 +140,7 @@ namespace ClinicaTerapeutica.Interface
         private System.Windows.Forms.Label tituloBemVindo;
         private System.Windows.Forms.Button marcarConsulta;
         private System.Windows.Forms.Button desmarcarConsulta;
+        private System.Windows.Forms.Button verTratamentos;
+        private System.Windows.Forms.Button verSessoes;
     }
 }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ClinicaTerapeutica.Interface
 {
-    public partial class menuInicialPaciente : Form
+    public partial class menuInicialP : Form
     {
-        public menuInicialPaciente()
+        public menuInicialP()
         {
             InitializeComponent();
         }
@@ -33,6 +33,16 @@ namespace ClinicaTerapeutica.Interface
         }
 
         private void cancelarConsulta_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_3(object sender, EventArgs e)
         {
 
         }
