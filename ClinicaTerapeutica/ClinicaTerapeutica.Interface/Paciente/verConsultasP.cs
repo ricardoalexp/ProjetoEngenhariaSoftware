@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ClinicaTerapeutica.Interface
 {
-    public partial class verConsultasP : Form
+    public partial class VerConsultasP : Form
     {
-        public verConsultasP()
+        public VerConsultasP()
         {
             InitializeComponent();
         }
@@ -25,6 +25,15 @@ namespace ClinicaTerapeutica.Interface
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void voltarAtras_Click(object sender, EventArgs e) //Volta atrás para o menu inicial do paciente
+        {
+            //Transita para o menu inicial do paciente
+            this.Hide();
+            MenuInicialP menu = new MenuInicialP();
+            menu.ShowDialog();
+            this.Close();
         }
     }
 }

@@ -1,7 +1,7 @@
 ﻿
 namespace ClinicaTerapeutica.Interface
 {
-    partial class verPerscricoesP
+    partial class VerPerscricoesP
     {
         /// <summary>
         /// Required designer variable.
@@ -61,8 +61,9 @@ namespace ClinicaTerapeutica.Interface
             this.voltarAtras.TabIndex = 5;
             this.voltarAtras.Text = "Voltar atrás";
             this.voltarAtras.UseVisualStyleBackColor = true;
+            this.voltarAtras.Click += new System.EventHandler(this.voltarAtras_Click);
             // 
-            // verPerscricoes
+            // verPerscricoesP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -70,7 +71,7 @@ namespace ClinicaTerapeutica.Interface
             this.Controls.Add(this.voltarAtras);
             this.Controls.Add(this.titlePerscricoes);
             this.Controls.Add(this.listPerscricoes);
-            this.Name = "verPerscricoes";
+            this.Name = "verPerscricoesP";
             this.Text = "verPerscricoes";
             this.ResumeLayout(false);
             this.PerformLayout();

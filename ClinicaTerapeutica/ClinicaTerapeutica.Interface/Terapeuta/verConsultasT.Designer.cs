@@ -1,7 +1,7 @@
 ﻿
 namespace ClinicaTerapeutica.Interface.Terapeuta
 {
-    partial class verConsultasT
+    partial class VerConsultasT
     {
         /// <summary>
         /// Required designer variable.
@@ -42,6 +42,7 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
             this.voltarAtras.TabIndex = 5;
             this.voltarAtras.Text = "Voltar atrás";
             this.voltarAtras.UseVisualStyleBackColor = true;
+            this.voltarAtras.Click += new System.EventHandler(this.voltarAtras_Click);
             // 
             // consultasMarcadas
             // 

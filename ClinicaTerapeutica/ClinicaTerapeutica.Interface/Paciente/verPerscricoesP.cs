@@ -10,11 +10,20 @@ using System.Windows.Forms;
 
 namespace ClinicaTerapeutica.Interface
 {
-    public partial class verPerscricoesP : Form
+    public partial class VerPerscricoesP : Form
     {
-        public verPerscricoesP()
+        public VerPerscricoesP()
         {
             InitializeComponent();
+        }
+
+        private void voltarAtras_Click(object sender, EventArgs e) //Volta atrás para o menu inicial do paciente
+        {
+            //Transita para o menu inicial do paciente
+            this.Hide();
+            MenuInicialP menu = new MenuInicialP();
+            menu.ShowDialog();
+            this.Close();
         }
     }
 }

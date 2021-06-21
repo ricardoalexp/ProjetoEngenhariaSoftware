@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace ClinicaTerapeutica.Interface.Terapeuta
 {
-    public partial class desmarcarConsultaT : Form
+    public partial class DesmarcarConsultaT : Form
     {
-        public desmarcarConsultaT()
+        public DesmarcarConsultaT()
         {
             InitializeComponent();
+        }
+
+        private void voltarAtras_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

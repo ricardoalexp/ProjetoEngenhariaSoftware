@@ -1,7 +1,7 @@
 ﻿
 namespace ClinicaTerapeutica.Interface
 {
-    partial class perscricaoP
+    partial class PerscricaoP
     {
         /// <summary>
         /// Required designer variable.
@@ -44,6 +44,7 @@ namespace ClinicaTerapeutica.Interface
             this.voltarAtras.TabIndex = 3;
             this.voltarAtras.Text = "Voltar atrás";
             this.voltarAtras.UseVisualStyleBackColor = true;
+            this.voltarAtras.Click += new System.EventHandler(this.voltarAtras_Click);
             // 
             // contextMenuStrip1
             // 
@@ -68,7 +69,7 @@ namespace ClinicaTerapeutica.Interface
             this.titlePerscricao.TabIndex = 7;
             this.titlePerscricao.Text = "Perscrição";
             // 
-            // perscricao
+            // perscricaoP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -76,7 +77,7 @@ namespace ClinicaTerapeutica.Interface
             this.Controls.Add(this.titlePerscricao);
             this.Controls.Add(this.TextBoxPerscricao);
             this.Controls.Add(this.voltarAtras);
-            this.Name = "perscricao";
+            this.Name = "perscricaoP";
             this.Text = "perscricao";
             this.ResumeLayout(false);
             this.PerformLayout();

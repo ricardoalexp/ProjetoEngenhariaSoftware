@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace ClinicaTerapeutica.Interface.Terapeuta
 {
-    public partial class perscricaoT : Form
+    public partial class PerscricaoT : Form
     {
-        public perscricaoT()
+        public PerscricaoT()
         {
             InitializeComponent();
+        }
+
+        private void voltarAtras_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

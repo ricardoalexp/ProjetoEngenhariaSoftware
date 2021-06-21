@@ -1,7 +1,7 @@
 ﻿
 namespace ClinicaTerapeutica.Interface.Terapeuta
 {
-    partial class verPerscricoesT
+    partial class VerPerscricoesT
     {
         /// <summary>
         /// Required designer variable.
@@ -29,10 +29,18 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // verPerscricoesT
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Name = "verPerscricoesT";
             this.Text = "verPerscricoesT";
+            this.Load += new System.EventHandler(this.verPerscricoesT_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion

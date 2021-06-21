@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace ClinicaTerapeutica.Interface.Terapeuta
 {
-    public partial class verSessoesT : Form
+    public partial class VerSessoesT : Form
     {
-        public verSessoesT()
+        public VerSessoesT()
         {
             InitializeComponent();
+        }
+
+        private void voltarAtras_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

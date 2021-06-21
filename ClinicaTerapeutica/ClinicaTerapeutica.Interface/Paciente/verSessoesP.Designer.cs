@@ -1,7 +1,7 @@
 ﻿
 namespace ClinicaTerapeutica.Interface.Paciente
 {
-    partial class verSessoesP
+    partial class VerSessoesP
     {
         /// <summary>
         /// Required designer variable.

@@ -1,7 +1,7 @@
 ﻿
 namespace ClinicaTerapeutica.Interface.Terapeuta
 {
-    partial class menuInicialT
+    partial class MenuInicialT
     {
         /// <summary>
         /// Required designer variable.
@@ -36,6 +36,7 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
             this.tituloBemVindo = new System.Windows.Forms.Label();
             this.verPerscricoes = new System.Windows.Forms.Button();
             this.verConsultas = new System.Windows.Forms.Button();
+            this.logOut = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // verSessoes
@@ -82,11 +83,11 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
             // 
             this.tituloBemVindo.AutoSize = true;
             this.tituloBemVindo.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tituloBemVindo.Location = new System.Drawing.Point(169, 11);
+            this.tituloBemVindo.Location = new System.Drawing.Point(120, 9);
             this.tituloBemVindo.Name = "tituloBemVindo";
-            this.tituloBemVindo.Size = new System.Drawing.Size(132, 32);
+            this.tituloBemVindo.Size = new System.Drawing.Size(238, 32);
             this.tituloBemVindo.TabIndex = 9;
-            this.tituloBemVindo.Text = "Bem Vindo";
+            this.tituloBemVindo.Text = "Bem vindo terapeuta";
             // 
             // verPerscricoes
             // 
@@ -108,11 +109,23 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
             this.verConsultas.Text = "Ver consultas";
             this.verConsultas.UseVisualStyleBackColor = true;
             // 
+            // logOut
+            // 
+            this.logOut.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.logOut.Location = new System.Drawing.Point(177, 283);
+            this.logOut.Name = "logOut";
+            this.logOut.Size = new System.Drawing.Size(124, 64);
+            this.logOut.TabIndex = 14;
+            this.logOut.Text = "LogOut";
+            this.logOut.UseVisualStyleBackColor = true;
+            this.logOut.Click += new System.EventHandler(this.logOut_Click);
+            // 
             // menuInicialT
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(474, 272);
+            this.ClientSize = new System.Drawing.Size(474, 370);
+            this.Controls.Add(this.logOut);
             this.Controls.Add(this.verSessoes);
             this.Controls.Add(this.verTratamentos);
             this.Controls.Add(this.desmarcarConsulta);
@@ -136,5 +149,6 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
         private System.Windows.Forms.Label tituloBemVindo;
         private System.Windows.Forms.Button verPerscricoes;
         private System.Windows.Forms.Button verConsultas;
+        private System.Windows.Forms.Button logOut;
     }
 }

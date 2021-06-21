@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ClinicaTerapeutica.Interface
 {
-    public partial class perscricaoP : Form
+    public partial class PerscricaoP : Form
     {
-        public perscricaoP()
+        public PerscricaoP()
         {
             InitializeComponent();
         }
@@ -20,6 +20,15 @@ namespace ClinicaTerapeutica.Interface
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void voltarAtras_Click(object sender, EventArgs e) //Volta atrás para o menu Ver Prescrições
+        {
+            //Transita para o menu Ver perscrições
+            this.Hide();
+            VerPerscricoesP menu = new VerPerscricoesP();
+            menu.ShowDialog();
+            this.Close();
         }
     }
 }
