@@ -1,6 +1,4 @@
-﻿using ClinicaTerapeutica.Data.GestorQueries;
-using ClinicaTerapeutica.Data.GestorQueries.Queries;
-using MySql.Data.MySqlClient;
+﻿using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -23,23 +21,10 @@ namespace ClinicaTerapeutica.Interface
         public void login()
         {
 
-            MySqlDataReader reader;
+           
             try
             {
-                ExecutorQueries query = new ExecutorQueries();
-                reader = query.ObterResultadoQuery(new QueryObterUtilizador("Marcos"));
-
-                if (reader.HasRows)
-                {
-                    while (reader.Read())
-                    {
-                        MessageBox.Show(reader.GetString("password"));                       
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("Oops");
-                }
+                
             }
             catch(Exception ex)
             {

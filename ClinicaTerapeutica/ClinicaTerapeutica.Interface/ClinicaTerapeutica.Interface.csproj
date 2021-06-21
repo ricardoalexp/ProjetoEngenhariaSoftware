@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ClinicaTerapeutica.Data\ClinicaTerapeutica.Data.csproj" />
+    <ProjectReference Include="..\ClinicaTerapeutica.Funcionalidade\ClinicaTerapeutica.Funcionalidade.csproj" />
   </ItemGroup>
 
 </Project>
