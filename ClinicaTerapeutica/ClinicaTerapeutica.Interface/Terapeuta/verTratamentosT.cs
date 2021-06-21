@@ -8,21 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ClinicaTerapeutica.Interface
+namespace ClinicaTerapeutica.Interface.Terapeuta
 {
-    public partial class desmarcarConsulta : Form
+    public partial class VerTratamentosT : Form
     {
-        public desmarcarConsulta()
+        public VerTratamentosT()
         {
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void voltarAtras_Click(object sender, EventArgs e)
         {
 
         }

@@ -1,7 +1,7 @@
 ﻿
 namespace ClinicaTerapeutica.Interface
 {
-    partial class verConsultasPaciente
+    partial class VerConsultasP
     {
         /// <summary>
         /// Required designer variable.
@@ -57,14 +57,15 @@ namespace ClinicaTerapeutica.Interface
             // 
             // voltarAtras
             // 
-            this.voltarAtras.Location = new System.Drawing.Point(129, 274);
+            this.voltarAtras.Location = new System.Drawing.Point(12, 274);
             this.voltarAtras.Name = "voltarAtras";
             this.voltarAtras.Size = new System.Drawing.Size(75, 23);
             this.voltarAtras.TabIndex = 2;
             this.voltarAtras.Text = "Voltar atrás";
             this.voltarAtras.UseVisualStyleBackColor = true;
+            this.voltarAtras.Click += new System.EventHandler(this.voltarAtras_Click);
             // 
-            // verConsultasPaciente
+            // verConsultasP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -72,7 +73,7 @@ namespace ClinicaTerapeutica.Interface
             this.Controls.Add(this.voltarAtras);
             this.Controls.Add(this.consultasMarcadas);
             this.Controls.Add(this.listBox1);
-            this.Name = "verConsultasPaciente";
+            this.Name = "verConsultasP";
             this.Text = "Consultas Paciente";
             this.ResumeLayout(false);
             this.PerformLayout();

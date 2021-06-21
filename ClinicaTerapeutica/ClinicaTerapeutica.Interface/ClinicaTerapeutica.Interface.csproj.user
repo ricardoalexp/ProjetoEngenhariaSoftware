@@ -1,16 +1,52 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Compile Update="desmarcarConsulta.cs">
+    <Compile Update="Paciente\DesmarcarConsultaP.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="inicioSessao.cs">
+    <Compile Update="InicioSessao.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="menuInicialPaciente.cs">
+    <Compile Update="Paciente\MarcarConsultaP.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="verConsultasPaciente.cs">
+    <Compile Update="Paciente\MenuInicialP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Paciente\PerscricaoP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Paciente\VerConsultasP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Paciente\VerPerscricoesP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Paciente\VerSessoesP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Paciente\VerTratamentosP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Terapeuta\DesmarcarConsultaT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Terapeuta\MenuInicialT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Terapeuta\PerscricaoT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Terapeuta\VerConsultasT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Terapeuta\VerPerscricoesT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Terapeuta\VerSessoesT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Terapeuta\VerTratamentosT.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

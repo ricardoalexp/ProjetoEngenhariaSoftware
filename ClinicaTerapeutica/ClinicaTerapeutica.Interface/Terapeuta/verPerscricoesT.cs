@@ -8,21 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ClinicaTerapeutica.Interface
+namespace ClinicaTerapeutica.Interface.Terapeuta
 {
-    public partial class verConsultasPaciente : Form
+    public partial class VerPerscricoesT : Form
     {
-        public verConsultasPaciente()
+        public VerPerscricoesT()
         {
             InitializeComponent();
         }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
+        private void verPerscricoesT_Load(object sender, EventArgs e)
         {
 
         }
