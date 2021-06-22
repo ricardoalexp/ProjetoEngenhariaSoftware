@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClinicaTerapeutica.Funcionalidade.Entidades
 {
-    class Paciente : Utilizador
+    public class Paciente : Utilizador
     {
         private bool vazio;
 

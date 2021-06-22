@@ -3,15 +3,35 @@ using System;
 
 namespace ClinicaTerapeutica.Data
 {
-    public class ConectorBDMySQL
+    public sealed class ConectorBDMySQL
     {
         private static string conexao = "datasource=127.0.0.1;port=3306;username=root;password=;database=clinicdb;";
-        public static MySqlConnection ConexaoBD { get; }
+        private static MySqlConnection ConexaoBD { get; set; }
 
-        static ConectorBDMySQL()
+        private static ConectorBDMySQL instance = null;
+        public static ConectorBDMySQL GetInstance
         {
+            get
+            {                
+                if (instance == null)
+                    instance = new ConectorBDMySQL();
+                return instance;
+            }
+        }
+
+        public MySqlConnection GetConnection()
+        {
+            if (ConexaoBD != null)
+            {
+                ConexaoBD.Close();
+            }
             ConexaoBD = new MySqlConnection(conexao);
             ConexaoBD.Open();
+            return ConexaoBD;
         }
+
+        private ConectorBDMySQL() { }
     }
 }
+
+

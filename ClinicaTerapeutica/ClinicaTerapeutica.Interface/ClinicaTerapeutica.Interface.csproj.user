@@ -28,6 +28,9 @@
     <Compile Update="Paciente\VerTratamentosP.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Terapeuta\CriarUtilizadorT.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Terapeuta\DesmarcarConsultaT.cs">
       <SubType>Form</SubType>
     </Compile>

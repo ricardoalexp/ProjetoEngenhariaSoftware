@@ -9,9 +9,9 @@ namespace ClinicaTerapeutica.Data.GestorQueries.Insercoes
     class InsercaoTerapeuta :IQuery
     {
         private string query;
-        public InsercaoTerapeuta(int id)
+        public InsercaoTerapeuta(string nome, string password, string dataNascimento, string email, int telefone)
         {
-            this.query = "INSERT INTO paciente VALUES (" + id + ");";
+            this.query = "INSERT INTO utilizador VALUES (null,'" + nome + "','" + password + "','" + dataNascimento + "','" + email + "'," + telefone + "); INSERT INTO terapeuta VALUES(LAST_INSERT_ID());";
         }
         public string ObterQuery()
         {

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClinicaTerapeutica.Funcionalidade.Entidades
 {
-    class Utilizador
+    public class Utilizador
     {
         private int Id { get; }
         private string Nome { get; set; }
