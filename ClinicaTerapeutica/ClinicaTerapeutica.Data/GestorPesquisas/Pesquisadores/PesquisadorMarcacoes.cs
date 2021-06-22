@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ClinicaTerapeutica.Funcionalidade.Gestores
+namespace ClinicaTerapeutica.Data.GestorPesquisas.Pesquisadores
 {
-    public class GestorConsultas
+    class PesquisadorMarcacoes : IPesquisadorMarcacoes
     {
-
     }
 }

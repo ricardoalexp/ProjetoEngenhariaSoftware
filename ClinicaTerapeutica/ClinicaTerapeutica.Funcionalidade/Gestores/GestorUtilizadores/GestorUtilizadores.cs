@@ -1,12 +1,11 @@
 ﻿using ClinicaTerapeutica.Funcionalidade.Autenticadores;
-using ClinicaTerapeutica.Funcionalidade.CriadorDeUtilizadores;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ClinicaTerapeutica.Funcionalidade
+namespace ClinicaTerapeutica.Funcionalidade.Gestores.GestorUtilizadores
 {
     public class GestorUtilizadores
     {

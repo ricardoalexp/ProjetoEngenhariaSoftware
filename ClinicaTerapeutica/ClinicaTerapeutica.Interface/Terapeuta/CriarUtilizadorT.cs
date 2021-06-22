@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ClinicaTerapeutica.Funcionalidade;
+using ClinicaTerapeutica.Funcionalidade.Gestores.GestorUtilizadores;
 
 namespace ClinicaTerapeutica.Interface.Terapeuta
 {

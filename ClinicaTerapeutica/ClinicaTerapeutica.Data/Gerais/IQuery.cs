@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace ClinicaTerapeutica.Data.GestorQueries
+namespace ClinicaTerapeutica.Data.Gerais
 {
     public interface IQuery
     {

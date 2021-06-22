@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ClinicaTerapeutica.Data.GestorQueries
+namespace ClinicaTerapeutica.Data.GestorPesquisas.Utilitarios
 {
     class ResultadoQuery : IResultadoQuery
     {

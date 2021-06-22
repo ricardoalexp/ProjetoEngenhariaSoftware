@@ -1,4 +1,4 @@
-﻿using ClinicaTerapeutica.Data.GestorQueries;
+﻿using ClinicaTerapeutica.Data.GestorPesquisas;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
@@ -10,27 +10,21 @@ namespace ClinicaTerapeutica.Funcionalidade.Autenticadores
 {
     class AutenticadorUtilizadores : IAutenticadorUtilizadores
     {
-        private ExecutorQueries executorQueries;
-        private MySqlDataReader dadosQuery;
+        private GestorPesquisas gestorPesquisas;
 
         public AutenticadorUtilizadores()
         {
-            executorQueries = new ExecutorQueries();
+            gestorPesquisas = new GestorPesquisas();
         }
         public bool AutenticarPaciente(int id, string password)
         {
-            dadosQuery = executorQueries.ResultadoAutenticarPaciente(id, password).ObterResultado();
-            bool result = dadosQuery.HasRows ? true : false;
-
-            return result;
+            return  gestorPesquisas.ObterPesquisadorUtilizadores().VerificarLoginPaciente(id, password);
 
         }
         public bool AutenticarTerapeuta(int id, string password)
         {
-            dadosQuery = executorQueries.ResultadoAutenticarTerapeuta(id, password).ObterResultado();
-            bool result = dadosQuery.HasRows ? true : false;
 
-            return result;
+            return gestorPesquisas.ObterPesquisadorUtilizadores().VerificarLoginTerapeuta(id,password);
         }
     }
 }

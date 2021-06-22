@@ -1,7 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
 
-namespace ClinicaTerapeutica.Data
+namespace ClinicaTerapeutica.Data.Gerais
 {
     public sealed class ConectorBDMySQL
     {

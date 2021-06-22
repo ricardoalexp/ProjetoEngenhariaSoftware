@@ -1,8 +1,9 @@
-﻿using System;
+﻿using ClinicaTerapeutica.Data.Gerais;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace ClinicaTerapeutica.Data.GestorQueries.Queries
+namespace ClinicaTerapeutica.Data.GestorPesquisas.Pesquisas
 {
     class QueryObterUtilizador : IQuery
     {

@@ -1,11 +1,12 @@
-﻿using MySql.Data.MySqlClient;
+﻿using ClinicaTerapeutica.Data.Gerais;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ClinicaTerapeutica.Data.GestorQueries.Queries
+namespace ClinicaTerapeutica.Data.GestorPesquisas.Pesquisas
 {
     class QueryAutenticarPaciente : IQuery
     {

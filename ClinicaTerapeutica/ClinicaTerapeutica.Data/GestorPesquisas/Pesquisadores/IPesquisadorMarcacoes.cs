@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ClinicaTerapeutica.Data.GestorQueries
+namespace ClinicaTerapeutica.Data.GestorPesquisas.Pesquisadores
 {
-    public interface IResultadoInsercao
+    public interface IPesquisadorMarcacoes
     {
-        int ObterResultado();
+
     }
 }

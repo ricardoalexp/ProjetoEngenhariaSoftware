@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ClinicaTerapeutica.Data.GestorQueries
+namespace ClinicaTerapeutica.Data.GestorRegistos.Utilitarios
 {
     class ResultadoInsercao : IResultadoInsercao
     {

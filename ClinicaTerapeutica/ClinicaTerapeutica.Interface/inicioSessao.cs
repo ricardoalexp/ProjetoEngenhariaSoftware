@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ClinicaTerapeutica.Interface.Terapeuta;
 using ClinicaTerapeutica.Interface.Paciente;
-using ClinicaTerapeutica.Funcionalidade;
+using ClinicaTerapeutica.Funcionalidade.Gestores.GestorUtilizadores;
 
 namespace ClinicaTerapeutica.Interface
 {
