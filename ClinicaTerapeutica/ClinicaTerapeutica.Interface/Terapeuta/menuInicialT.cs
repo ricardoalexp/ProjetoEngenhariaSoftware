@@ -25,5 +25,14 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
             menu.ShowDialog();
             this.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e) //Criar Utilizador
+        {
+            //Transita para o menu Criar Utilizador
+            this.Hide();
+            CriarUtilizadorT menu = new CriarUtilizadorT();
+            menu.ShowDialog();
+            this.Close();
+        }
     }
 }

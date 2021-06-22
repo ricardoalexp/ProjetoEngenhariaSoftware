@@ -21,14 +21,15 @@ namespace ClinicaTerapeutica.Data.GestorQueries
 
             return resultado;
         }
+
         private IResultadoInsercao ExecutarInsercao(IQuery query)
         {
-            string queryAlterada = query.ObterQuery() + "SELECT CAST(scope_identity() AS int)";
+            string queryAlterada = query.ObterQuery() + "SELECT LAST_INSERT_ID()";
             MySqlConnection conexao = ConectorBDMySQL.GetInstance.GetConnection();
             MySqlCommand commandDatabase = new MySqlCommand(queryAlterada, conexao);
 
             int newId;
-            if((newId = (int)commandDatabase.ExecuteScalar()) > 0)
+            if((newId = Convert.ToInt32(commandDatabase.ExecuteScalar())) > 0)
             {
                 return new ResultadoInsercao(newId);
             }
@@ -50,9 +51,15 @@ namespace ClinicaTerapeutica.Data.GestorQueries
             return ExecutarQuery(querySelecionada);
         }
 
-        public IResultadoInsercao ResultadoInserirUtilizador(string nome, string password, string dataNascimento, string email, int telefone)
+        public IResultadoInsercao ResultadoInserirPaciente(string nome, string password, string dataNascimento, string email, int telefone)
         {
-            querySelecionada = new InsercaoUtilizador(nome, password, dataNascimento, email, telefone);
+            querySelecionada = new InsercaoPaciente(nome, password, dataNascimento, email, telefone);
+            return ExecutarInsercao(querySelecionada);
+        }
+
+        public IResultadoInsercao ResultadoInserirTerapeuta(string nome, string password, string dataNascimento, string email, int telefone)
+        {
+            querySelecionada = new InsercaoTerapeuta(nome, password, dataNascimento, email, telefone);
             return ExecutarInsercao(querySelecionada);
         }
 

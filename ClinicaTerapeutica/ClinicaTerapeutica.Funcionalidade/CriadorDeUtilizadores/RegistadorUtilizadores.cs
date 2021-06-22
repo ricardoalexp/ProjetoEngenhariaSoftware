@@ -14,10 +14,24 @@ namespace ClinicaTerapeutica.Funcionalidade.CriadorDeUtilizadores
 
         public Paciente RegistarPaciente(string nome, string password, string dataNascimento, string email, int telefone)
         {
+            executorQueries = new ExecutorQueries();
             if (VerificarExistenciaEmail(email)) { return new Paciente(); }
 
-            int result = executorQueries.ResultadoInserirUtilizador(nome, password, dataNascimento, email, telefone).ObterResultado();
+            int result = executorQueries.ResultadoInserirPaciente(nome, password, dataNascimento, email, telefone).ObterResultado();
             if(result == 0)
+            {
+                return new Paciente();
+            }
+            else { return new Paciente(); } //alterar
+        }
+
+        public Paciente RegistarTerapeuta(string nome, string password, string dataNascimento, string email, int telefone)
+        {
+            executorQueries = new ExecutorQueries();
+            if (VerificarExistenciaEmail(email)) { return new Paciente(); }
+
+            int result = executorQueries.ResultadoInserirTerapeuta(nome, password, dataNascimento, email, telefone).ObterResultado();
+            if (result == 0)
             {
                 return new Paciente();
             }

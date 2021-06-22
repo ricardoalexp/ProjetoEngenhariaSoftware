@@ -26,9 +26,9 @@ namespace ClinicaTerapeutica.Interface
             Autenticador autenticador = new Autenticador();
             
             if (checkBoxTerapeuta.Checked)
-            {              
+            {
                 if (autenticador.AutenticarTerapeuta(int.Parse(textBoxUser.Text), textBoxPassword.Text)) 
-                                {
+                {
                     MessageBox.Show("Bem vindo terapeuta!");
 
                     //Transita para o menu inicial do terapeuta
@@ -40,8 +40,8 @@ namespace ClinicaTerapeutica.Interface
                 else
                 {
                     MessageBox.Show("Credenciais incorretas!\n" +
-                   "Tente outra vez");
-                }                
+                    "Tente outra vez");
+                }
             }
             else
             {
@@ -61,9 +61,7 @@ namespace ClinicaTerapeutica.Interface
                     "Tente outra vez");
                 }
             }
-
-         }                
-        
+         }
 
         private void button1_Click(object sender, EventArgs e)
         {

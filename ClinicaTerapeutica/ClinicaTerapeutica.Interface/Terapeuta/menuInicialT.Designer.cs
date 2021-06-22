@@ -37,6 +37,7 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
             this.verPerscricoes = new System.Windows.Forms.Button();
             this.verConsultas = new System.Windows.Forms.Button();
             this.logOut = new System.Windows.Forms.Button();
+            this.criarUtilizador = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // verSessoes
@@ -112,7 +113,7 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
             // logOut
             // 
             this.logOut.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.logOut.Location = new System.Drawing.Point(177, 283);
+            this.logOut.Location = new System.Drawing.Point(331, 282);
             this.logOut.Name = "logOut";
             this.logOut.Size = new System.Drawing.Size(124, 64);
             this.logOut.TabIndex = 14;
@@ -120,11 +121,23 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
             this.logOut.UseVisualStyleBackColor = true;
             this.logOut.Click += new System.EventHandler(this.logOut_Click);
             // 
-            // menuInicialT
+            // criarUtilizador
+            // 
+            this.criarUtilizador.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.criarUtilizador.Location = new System.Drawing.Point(177, 282);
+            this.criarUtilizador.Name = "criarUtilizador";
+            this.criarUtilizador.Size = new System.Drawing.Size(124, 64);
+            this.criarUtilizador.TabIndex = 15;
+            this.criarUtilizador.Text = "Criar utilizador";
+            this.criarUtilizador.UseVisualStyleBackColor = true;
+            this.criarUtilizador.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // MenuInicialT
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(474, 370);
+            this.Controls.Add(this.criarUtilizador);
             this.Controls.Add(this.logOut);
             this.Controls.Add(this.verSessoes);
             this.Controls.Add(this.verTratamentos);
@@ -133,7 +146,7 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
             this.Controls.Add(this.tituloBemVindo);
             this.Controls.Add(this.verPerscricoes);
             this.Controls.Add(this.verConsultas);
-            this.Name = "menuInicialT";
+            this.Name = "MenuInicialT";
             this.Text = "menuInicialTerapeuta";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -150,5 +163,6 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
         private System.Windows.Forms.Button verPerscricoes;
         private System.Windows.Forms.Button verConsultas;
         private System.Windows.Forms.Button logOut;
+        private System.Windows.Forms.Button criarUtilizador;
     }
 }
