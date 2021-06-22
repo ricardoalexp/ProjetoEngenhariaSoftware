@@ -15,11 +15,12 @@ namespace ClinicaTerapeutica.Interface
         public VerConsultasP()
         {
             InitializeComponent();
+            listaConsultas();
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -34,6 +35,24 @@ namespace ClinicaTerapeutica.Interface
             MenuInicialP menu = new MenuInicialP();
             menu.ShowDialog();
             this.Close();
+        }
+
+        private void listaConsultas()
+        {
+            int i = 0;
+            if (true) //query estiver vazia
+            {
+                while (i < 10) //existirem linhas
+                {
+                    listBox1.Items.Add("Chupa aqui!");
+                    i++;
+                }
+            }
+            else
+            {
+                listBox1.Items.Add("Não tem consultas marcadas");
+            }
+
         }
     }
 }

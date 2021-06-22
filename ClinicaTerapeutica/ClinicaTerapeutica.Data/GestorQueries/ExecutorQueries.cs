@@ -38,6 +38,11 @@ namespace ClinicaTerapeutica.Data.GestorQueries
                 return new ResultadoInsercao(0);
             }
         }
+        public IResultadoQuery ResultadoObterConsultasPaciente(int id)
+        {
+            querySelecionada = new QueryObterConsultasPaciente(id);
+            return ExecutarQuery(querySelecionada);
+        }
 
         public IResultadoQuery ResultadoAutenticarPaciente(int id, string password)
         {

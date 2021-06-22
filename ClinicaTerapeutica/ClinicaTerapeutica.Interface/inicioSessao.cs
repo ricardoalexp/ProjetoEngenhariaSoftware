@@ -25,8 +25,6 @@ namespace ClinicaTerapeutica.Interface
 
         public void login()
         {
-        
-            
             if (checkBoxTerapeuta.Checked)
             {
                 if (gestorUtilizadores.ObterAutenticadorUtilizadores().AutenticarTerapeuta(int.Parse(textBoxUser.Text), textBoxPassword.Text)) 
