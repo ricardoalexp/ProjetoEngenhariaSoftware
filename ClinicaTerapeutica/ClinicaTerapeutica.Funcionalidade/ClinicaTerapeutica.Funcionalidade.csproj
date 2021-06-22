@@ -8,8 +8,4 @@
     <ProjectReference Include="..\ClinicaTerapeutica.Data\ClinicaTerapeutica.Data.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Autenticador\" />
-  </ItemGroup>
-
 </Project>

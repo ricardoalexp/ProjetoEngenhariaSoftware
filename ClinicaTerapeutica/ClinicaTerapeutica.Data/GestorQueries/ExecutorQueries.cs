@@ -44,7 +44,7 @@ namespace ClinicaTerapeutica.Data.GestorQueries
             querySelecionada = new QueryAutenticarPaciente(id, password);
             return ExecutarQuery(querySelecionada);
         }
-
+        
         public IResultadoQuery ResultadoAutenticarTerapeuta(int id, string password)
         {
             querySelecionada = new QueryAutenticarTerapeuta(id, password);

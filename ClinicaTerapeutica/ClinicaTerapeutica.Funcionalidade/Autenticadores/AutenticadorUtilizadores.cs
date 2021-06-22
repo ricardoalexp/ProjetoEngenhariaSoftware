@@ -6,14 +6,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ClinicaTerapeutica.Funcionalidade.Autenticador
+namespace ClinicaTerapeutica.Funcionalidade.Autenticadores
 {
-    public class Autenticador
+    class AutenticadorUtilizadores : IAutenticadorUtilizadores
     {
         private ExecutorQueries executorQueries;
         private MySqlDataReader dadosQuery;
 
-        public Autenticador()
+        public AutenticadorUtilizadores()
         {
             executorQueries = new ExecutorQueries();
         }

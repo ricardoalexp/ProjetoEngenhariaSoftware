@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ClinicaTerapeutica.Funcionalidade.CriadorDeUtilizadores
 {
-    public class RegistadorUtilizadores
+    class RegistadorUtilizadores : IRegistadorUtilizadores
     {
         private ExecutorQueries executorQueries;
 
