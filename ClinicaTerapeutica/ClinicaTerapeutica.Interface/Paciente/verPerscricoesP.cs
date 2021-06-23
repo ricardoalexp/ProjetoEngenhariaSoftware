@@ -16,6 +16,7 @@ namespace ClinicaTerapeutica.Interface
     public partial class VerPerscricoesP : Form
     {
         private int idPaciente;
+
         public VerPerscricoesP()
         {
             InitializeComponent();
@@ -30,11 +31,6 @@ namespace ClinicaTerapeutica.Interface
             MenuInicialP menu = new MenuInicialP();
             menu.ShowDialog();
             this.Close();
-        }
-
-        private void VerPerscricoesP_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void listPerscricoes_SelectedIndexChanged(object sender, EventArgs e)
@@ -73,6 +69,11 @@ namespace ClinicaTerapeutica.Interface
             }
             else { MessageBox.Show("Não tem prescrições"); }
             
+
+        }
+
+        private void VerPerscricoesP_Load(object sender, EventArgs e)
+        {
 
         }
 

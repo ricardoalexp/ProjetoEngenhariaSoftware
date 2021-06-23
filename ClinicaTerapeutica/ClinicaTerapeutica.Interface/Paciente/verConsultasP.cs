@@ -22,16 +22,6 @@ namespace ClinicaTerapeutica.Interface
             listaConsultas();
         }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void voltarAtras_Click(object sender, EventArgs e) //Volta atrás para o menu inicial do paciente
         {
             //Transita para o menu inicial do paciente
@@ -63,6 +53,9 @@ namespace ClinicaTerapeutica.Interface
                 if (checkedListBox1.GetItemChecked(i))
                 {
                     //query que remove o elemento i da lista
+
+                    if (true) { MessageBox.Show("A consulta foi desmarcada com sucesso"); } //query foi bem sucedida
+                    else { MessageBox.Show("Erro: A consulta NÂO foi desmarcada"); } //query não foi bem sucedida
                 }
             }
 
@@ -70,14 +63,24 @@ namespace ClinicaTerapeutica.Interface
             listaConsultas();
         }
 
-        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-        }
-
         private void desmarcarSelecionadas_Click(object sender, EventArgs e)
         {
             desmarcaConsultas();
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
