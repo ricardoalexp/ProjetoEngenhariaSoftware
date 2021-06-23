@@ -7,9 +7,11 @@ using System.Threading.Tasks;
 
 namespace ClinicaTerapeutica.Funcionalidade.Gestores.GestorPrescricoes
 {
-    class GestorPrescricoes
+    public class GestorPrescricoes
     {
         private IRegistadorPrescricoes registadorPrescricoes;
+
+        private IPesquisadorPrescricoes pesquisadorPrescricoes;
 
         public IRegistadorPrescricoes ObterRegistadorPrescricoes()
         {
@@ -18,6 +20,14 @@ namespace ClinicaTerapeutica.Funcionalidade.Gestores.GestorPrescricoes
                 registadorPrescricoes = new RegistadorPrescricoes();
             }
             return registadorPrescricoes;
+        }
+        public IPesquisadorPrescricoes ObterPesquisadorPrescricoes()
+        {
+            if (pesquisadorPrescricoes == null)
+            {
+                pesquisadorPrescricoes = new PesquisadorPrescricoes();
+            }
+            return pesquisadorPrescricoes;
         }
     }
 }
