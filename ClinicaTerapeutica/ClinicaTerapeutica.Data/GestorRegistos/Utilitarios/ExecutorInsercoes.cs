@@ -1,6 +1,5 @@
 ﻿using ClinicaTerapeutica.Data.Gerais;
-using ClinicaTerapeutica.Data.GestorQueries;
-using ClinicaTerapeutica.Data.GestorQueries.Insercoes;
+using ClinicaTerapeutica.Data.GestorRegistos.Insercoes;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
@@ -43,7 +42,13 @@ namespace ClinicaTerapeutica.Data.GestorRegistos.Utilitarios
         }
         public IResultadoInsercao ResultadoInserirConsulta(int duracao, string data, int hora, int idPaciente, int idTerapeuta)
         {
-            return null;
+            querySelecionada = new InsercaoConsulta(duracao, data, hora, idPaciente, idTerapeuta);
+            return ExecutarInsercao(querySelecionada);
+        }
+        public IResultadoInsercao ResultadoInserirPrescricao(string validade, string comentario, int idConsulta)
+        {
+            querySelecionada = new InsercaoPrescricao(validade,comentario,idConsulta);
+            return ExecutarInsercao(querySelecionada);
         }
     }
 }

@@ -7,13 +7,14 @@ using System.Threading.Tasks;
 
 namespace ClinicaTerapeutica.Data.GestorRegistos.Insercoes
 {
-    class InsercaoTerapeuta :IQuery
+    class InsercaoConsulta : IQuery
     {
         private string query;
-        public InsercaoTerapeuta(string nome, string password, string dataNascimento, string email, int telefone)
+        public InsercaoConsulta(int duracao, string data, int hora, int idPaciente, int idTerapeuta)
         {
-            this.query = "INSERT INTO utilizador VALUES (null,'" + nome + "','" + password + "','" + dataNascimento + "','" + email + "'," + telefone + "); INSERT INTO terapeuta VALUES(LAST_INSERT_ID());";
+            this.query = "INSERT INTO consulta VALUES (null," + duracao + ",'" + data + "'," + hora + "," + idPaciente + "," + idTerapeuta + ");";
         }
+
         public string ObterQuery()
         {
             return query;

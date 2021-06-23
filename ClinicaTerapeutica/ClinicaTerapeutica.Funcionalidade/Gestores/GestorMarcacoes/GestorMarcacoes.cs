@@ -10,6 +10,8 @@ namespace ClinicaTerapeutica.Funcionalidade.Gestores.GestorMarcacoes
     {
         IPesquisadorMarcacoes pesquisadorMarcacoes;
 
+        IRegistadorMarcacoes registadorMarcacoes;
+
         public IPesquisadorMarcacoes ObterPesquisadorMarcacoes()
         {
             if (pesquisadorMarcacoes == null)
@@ -17,6 +19,15 @@ namespace ClinicaTerapeutica.Funcionalidade.Gestores.GestorMarcacoes
                 pesquisadorMarcacoes = new PesquisadorMarcacoes();
             }
             return pesquisadorMarcacoes;
-        }         
+        }
+
+        public IRegistadorMarcacoes ObterRegistadorMarcacoes()
+        {
+            if (registadorMarcacoes == null)
+            {
+                registadorMarcacoes = new RegistadorMarcacoes();
+            }
+            return registadorMarcacoes;
+        }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClinicaTerapeutica.Data.Entidades.Modelos
 {
-    public class Consulta
+    public class Consulta : Modelo
     {
         public int Id { get; set; }
         public int Duracao { get; set; }
