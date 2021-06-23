@@ -33,7 +33,6 @@ namespace ClinicaTerapeutica.Interface
             this.verPerscricoes = new System.Windows.Forms.Button();
             this.tituloBemVindo = new System.Windows.Forms.Label();
             this.marcarConsulta = new System.Windows.Forms.Button();
-            this.desmarcarConsulta = new System.Windows.Forms.Button();
             this.verTratamentos = new System.Windows.Forms.Button();
             this.verSessoes = new System.Windows.Forms.Button();
             this.logOut = new System.Windows.Forms.Button();
@@ -83,17 +82,6 @@ namespace ClinicaTerapeutica.Interface
             this.marcarConsulta.UseVisualStyleBackColor = true;
             this.marcarConsulta.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // desmarcarConsulta
-            // 
-            this.desmarcarConsulta.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.desmarcarConsulta.Location = new System.Drawing.Point(195, 184);
-            this.desmarcarConsulta.Name = "desmarcarConsulta";
-            this.desmarcarConsulta.Size = new System.Drawing.Size(124, 64);
-            this.desmarcarConsulta.TabIndex = 4;
-            this.desmarcarConsulta.Text = "Desmarcar Consulta";
-            this.desmarcarConsulta.UseVisualStyleBackColor = true;
-            this.desmarcarConsulta.Click += new System.EventHandler(this.cancelarConsulta_Click);
-            // 
             // verTratamentos
             // 
             this.verTratamentos.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -127,7 +115,7 @@ namespace ClinicaTerapeutica.Interface
             this.logOut.UseVisualStyleBackColor = true;
             this.logOut.Click += new System.EventHandler(this.logOut_Click);
             // 
-            // menuInicialP
+            // MenuInicialP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -135,12 +123,11 @@ namespace ClinicaTerapeutica.Interface
             this.Controls.Add(this.logOut);
             this.Controls.Add(this.verSessoes);
             this.Controls.Add(this.verTratamentos);
-            this.Controls.Add(this.desmarcarConsulta);
             this.Controls.Add(this.marcarConsulta);
             this.Controls.Add(this.tituloBemVindo);
             this.Controls.Add(this.verPerscricoes);
             this.Controls.Add(this.verConsultas);
-            this.Name = "menuInicialP";
+            this.Name = "MenuInicialP";
             this.Text = "Menu Inicial (Paciente)";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -153,7 +140,6 @@ namespace ClinicaTerapeutica.Interface
         private System.Windows.Forms.Button verPerscricoes;
         private System.Windows.Forms.Label tituloBemVindo;
         private System.Windows.Forms.Button marcarConsulta;
-        private System.Windows.Forms.Button desmarcarConsulta;
         private System.Windows.Forms.Button verTratamentos;
         private System.Windows.Forms.Button verSessoes;
         private System.Windows.Forms.Button logOut;

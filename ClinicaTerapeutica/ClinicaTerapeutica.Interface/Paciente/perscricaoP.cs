@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace ClinicaTerapeutica.Interface
 {
+
     public partial class PerscricaoP : Form
     {
-        public PerscricaoP()
+        private int idPrescricao;
+
+        public PerscricaoP(int idPrescricao)
         {
             InitializeComponent();
+            this.idPrescricao = idPrescricao;
+            MessageBox.Show(idPrescricao.ToString());
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -29,6 +35,11 @@ namespace ClinicaTerapeutica.Interface
             VerPerscricoesP menu = new VerPerscricoesP();
             menu.ShowDialog();
             this.Close();
+        }
+
+        private void TextBoxPerscricao_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

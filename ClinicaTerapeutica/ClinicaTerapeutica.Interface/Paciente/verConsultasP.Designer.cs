@@ -29,20 +29,11 @@ namespace ClinicaTerapeutica.Interface
         /// </summary>
         private void InitializeComponent()
         {
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.consultasMarcadas = new System.Windows.Forms.Label();
             this.voltarAtras = new System.Windows.Forms.Button();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.desmarcarSelecionadas = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 15;
-            this.listBox1.Location = new System.Drawing.Point(12, 69);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(313, 199);
-            this.listBox1.TabIndex = 0;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // consultasMarcadas
             // 
@@ -65,15 +56,35 @@ namespace ClinicaTerapeutica.Interface
             this.voltarAtras.UseVisualStyleBackColor = true;
             this.voltarAtras.Click += new System.EventHandler(this.voltarAtras_Click);
             // 
-            // verConsultasP
+            // checkedListBox1
+            // 
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Location = new System.Drawing.Point(12, 42);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(314, 220);
+            this.checkedListBox1.TabIndex = 3;
+            this.checkedListBox1.SelectedIndexChanged += new System.EventHandler(this.checkedListBox1_SelectedIndexChanged);
+            // 
+            // desmarcarSelecionadas
+            // 
+            this.desmarcarSelecionadas.Location = new System.Drawing.Point(240, 274);
+            this.desmarcarSelecionadas.Name = "desmarcarSelecionadas";
+            this.desmarcarSelecionadas.Size = new System.Drawing.Size(86, 67);
+            this.desmarcarSelecionadas.TabIndex = 4;
+            this.desmarcarSelecionadas.Text = "Desmarcar consultas Selecionadas";
+            this.desmarcarSelecionadas.UseVisualStyleBackColor = true;
+            this.desmarcarSelecionadas.Click += new System.EventHandler(this.desmarcarSelecionadas_Click);
+            // 
+            // VerConsultasP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(338, 309);
+            this.ClientSize = new System.Drawing.Size(338, 353);
+            this.Controls.Add(this.desmarcarSelecionadas);
+            this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.voltarAtras);
             this.Controls.Add(this.consultasMarcadas);
-            this.Controls.Add(this.listBox1);
-            this.Name = "verConsultasP";
+            this.Name = "VerConsultasP";
             this.Text = "Consultas Paciente";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -81,9 +92,9 @@ namespace ClinicaTerapeutica.Interface
         }
 
         #endregion
-
-        private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label consultasMarcadas;
         private System.Windows.Forms.Button voltarAtras;
+        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.Button desmarcarSelecionadas;
     }
 }

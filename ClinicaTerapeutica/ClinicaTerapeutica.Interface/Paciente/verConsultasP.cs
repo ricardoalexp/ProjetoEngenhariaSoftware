@@ -14,9 +14,11 @@ namespace ClinicaTerapeutica.Interface
 {
     public partial class VerConsultasP : Form
     {
+        private int idPaciente;
         public VerConsultasP()
         {
             InitializeComponent();
+            idPaciente = 2;
             listaConsultas();
         }
 
@@ -42,19 +44,40 @@ namespace ClinicaTerapeutica.Interface
         private void listaConsultas()
         {
             GestorMarcacoes gestorMarcacoes = new GestorMarcacoes();
-            List<Consulta> consultas = gestorMarcacoes.ObterPesquisadorMarcacoes().ObterConsultasPaciente(2);
+            List<Consulta> consultas = gestorMarcacoes.ObterPesquisadorMarcacoes().ObterConsultasPaciente(idPaciente);
+
             if (consultas.Count != 0)
             {
-                for(int i = 0; i < consultas.Count; i++)
+                for (int i = 0; i < consultas.Count; i++)
                 {
-                    listBox1.Items.Add(consultas[i].ToString());
+                    checkedListBox1.Items.Add(consultas[i].ToString());
                 }
             }
-            else
+            else { checkedListBox1.Items.Add("Não tem consultas marcadas"); }
+        }
+
+        private void desmarcaConsultas()
+        {
+            for (int i = 0; i < checkedListBox1.Items.Count; i++)
             {
-                listBox1.Items.Add("Não tem consultas marcadas");
+                if (checkedListBox1.GetItemChecked(i))
+                {
+                    //query que remove o elemento i da lista
+                }
             }
 
+            checkedListBox1.Items.Clear();
+            listaConsultas();
+        }
+
+        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void desmarcarSelecionadas_Click(object sender, EventArgs e)
+        {
+            desmarcaConsultas();
         }
     }
 }
