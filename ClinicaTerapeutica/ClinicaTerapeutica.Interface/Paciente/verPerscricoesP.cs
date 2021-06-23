@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ClinicaTerapeutica.Funcionalidade.Gestores.GestorPrescricoes;
 
 namespace ClinicaTerapeutica.Interface
 {
@@ -45,13 +46,8 @@ namespace ClinicaTerapeutica.Interface
         private void listaPrescricoes()
         {
             // O código da linha de baixo está errado. Corrigir!!
-            GestorMarcacoes gestorMarcacoes = new GestorMarcacoes();
-            List<Consulta> prescricoes = gestorMarcacoes.ObterPesquisadorMarcacoes().ObterConsultasPaciente(idPaciente);
-
-            listPerscricoes.Items.Add("olá 0");
-            listPerscricoes.Items.Add("olá 1");
-            listPerscricoes.Items.Add("olá 2");
-            prescricoes = new();
+            GestorPrescricoes gestorPrescricoes = new GestorPrescricoes();
+            List<Prescricao> prescricoes = gestorPrescricoes.ObterPesquisadorPrescricoes().ObterPrescricoesPaciente(idPaciente);
 
             if (prescricoes.Count != 0)
             {

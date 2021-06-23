@@ -13,7 +13,7 @@
     <Compile Update="Paciente\PerscricaoP.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Paciente\VerConsultasP.cs">
+    <Compile Update="Paciente\verConsultasP.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Paciente\VerPerscricoesP.cs">
