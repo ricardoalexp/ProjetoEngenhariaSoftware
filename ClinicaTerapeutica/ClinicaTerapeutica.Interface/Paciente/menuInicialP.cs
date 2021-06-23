@@ -41,15 +41,6 @@ namespace ClinicaTerapeutica.Interface
             this.Close();
         }
 
-        private void cancelarConsulta_Click(object sender, EventArgs e) //Desmarcar consulta
-        {
-            //Transita para o menu Desmarcar consulta
-            this.Hide();
-            DesmarcarConsultaP menu = new DesmarcarConsultaP();
-            menu.ShowDialog();
-            this.Close();
-        }
-
         private void button1_Click_2(object sender, EventArgs e) //Ver tratamentos
         {
             //Transita para o menu Ver tratamentos

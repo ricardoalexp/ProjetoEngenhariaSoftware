@@ -58,6 +58,7 @@ namespace ClinicaTerapeutica.Interface
             this.TextBoxPerscricao.Size = new System.Drawing.Size(254, 226);
             this.TextBoxPerscricao.TabIndex = 6;
             this.TextBoxPerscricao.Text = "";
+            this.TextBoxPerscricao.TextChanged += new System.EventHandler(this.TextBoxPerscricao_TextChanged);
             // 
             // titlePerscricao
             // 
@@ -69,7 +70,7 @@ namespace ClinicaTerapeutica.Interface
             this.titlePerscricao.TabIndex = 7;
             this.titlePerscricao.Text = "Perscrição";
             // 
-            // perscricaoP
+            // PerscricaoP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -77,7 +78,7 @@ namespace ClinicaTerapeutica.Interface
             this.Controls.Add(this.titlePerscricao);
             this.Controls.Add(this.TextBoxPerscricao);
             this.Controls.Add(this.voltarAtras);
-            this.Name = "perscricaoP";
+            this.Name = "PerscricaoP";
             this.Text = "perscricao";
             this.ResumeLayout(false);
             this.PerformLayout();

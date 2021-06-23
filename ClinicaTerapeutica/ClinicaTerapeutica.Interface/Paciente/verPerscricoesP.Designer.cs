@@ -42,6 +42,7 @@ namespace ClinicaTerapeutica.Interface
             this.listPerscricoes.Name = "listPerscricoes";
             this.listPerscricoes.Size = new System.Drawing.Size(304, 169);
             this.listPerscricoes.TabIndex = 0;
+            this.listPerscricoes.SelectedIndexChanged += new System.EventHandler(this.listPerscricoes_SelectedIndexChanged);
             // 
             // titlePerscricoes
             // 
@@ -63,7 +64,7 @@ namespace ClinicaTerapeutica.Interface
             this.voltarAtras.UseVisualStyleBackColor = true;
             this.voltarAtras.Click += new System.EventHandler(this.voltarAtras_Click);
             // 
-            // verPerscricoesP
+            // VerPerscricoesP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -71,8 +72,9 @@ namespace ClinicaTerapeutica.Interface
             this.Controls.Add(this.voltarAtras);
             this.Controls.Add(this.titlePerscricoes);
             this.Controls.Add(this.listPerscricoes);
-            this.Name = "verPerscricoesP";
+            this.Name = "VerPerscricoesP";
             this.Text = "verPerscricoes";
+            this.Load += new System.EventHandler(this.VerPerscricoesP_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
