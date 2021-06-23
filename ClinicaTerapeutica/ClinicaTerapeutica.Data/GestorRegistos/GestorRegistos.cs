@@ -9,9 +9,11 @@ namespace ClinicaTerapeutica.Data.GestorRegistos
 {
     public class GestorRegistos
     {
-        IRegistadorUtilizadores registadorUtilizadores;
+        private IRegistadorUtilizadores registadorUtilizadores;
 
-        IRegistadorMarcacoes registadorMarcacoes;
+        private IRegistadorMarcacoes registadorMarcacoes;
+
+        private IRegistadorPrescricoes registadorPrescricoes;
 
         public IRegistadorUtilizadores ObterRegistadorUtilizadores()
         {
@@ -20,6 +22,22 @@ namespace ClinicaTerapeutica.Data.GestorRegistos
                 registadorUtilizadores = new RegistadorUtilizadores();
             }
             return registadorUtilizadores;
+        }
+        public IRegistadorMarcacoes ObterRegistadorMarcacoes()
+        {
+            if (registadorMarcacoes == null)
+            {
+                registadorMarcacoes = new RegistadorMarcacoes();
+            }
+            return registadorMarcacoes;
+        }
+        public IRegistadorPrescricoes ObterRegistadorPrescricoes()
+        {
+            if (registadorPrescricoes == null)
+            {
+                registadorPrescricoes = new RegistadorPrescricoes();
+            }
+            return registadorPrescricoes;
         }
     }
 }
