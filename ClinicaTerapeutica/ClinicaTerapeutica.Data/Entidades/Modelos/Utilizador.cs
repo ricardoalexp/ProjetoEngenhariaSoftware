@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ClinicaTerapeutica.Funcionalidade.Entidades
+namespace ClinicaTerapeutica.Data.Entidades.Modelos
 {
     public class Utilizador
     {

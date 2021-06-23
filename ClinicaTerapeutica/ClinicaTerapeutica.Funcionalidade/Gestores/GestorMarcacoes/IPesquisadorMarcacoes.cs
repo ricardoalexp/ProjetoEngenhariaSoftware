@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ClinicaTerapeutica.Data.GestorPesquisas.Pesquisadores
+namespace ClinicaTerapeutica.Funcionalidade.Gestores.GestorMarcacoes
 {
     public interface IPesquisadorMarcacoes
     {

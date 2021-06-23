@@ -1,4 +1,7 @@
-﻿using System;
+﻿using ClinicaTerapeutica.Data.Entidades.Adaptadores;
+using ClinicaTerapeutica.Data.Entidades.Modelos;
+using ClinicaTerapeutica.Data.GestorPesquisas.Utilitarios;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +11,13 @@ namespace ClinicaTerapeutica.Data.GestorPesquisas.Pesquisadores
 {
     class PesquisadorMarcacoes : IPesquisadorMarcacoes
     {
+        private ExecutorPesquisas executorPesquisas;
+        public List<Consulta> ObterConsultasPaciente(int id)
+        {
+            IAdaptadorConsulta adaptador = new AdaptadorConsulta();
+            executorPesquisas = new ExecutorPesquisas();
+
+            return adaptador.DeSqlParaConsultas(executorPesquisas.ResultadoObterConsultasPaciente(id).ObterResultado());
+        }
     }
 }

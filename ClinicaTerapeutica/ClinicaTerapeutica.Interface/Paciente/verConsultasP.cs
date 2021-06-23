@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ClinicaTerapeutica.Data.Entidades.Modelos;
+using ClinicaTerapeutica.Funcionalidade.Gestores.GestorMarcacoes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -39,13 +41,13 @@ namespace ClinicaTerapeutica.Interface
 
         private void listaConsultas()
         {
-            int i = 0;
-            if (true) //query estiver vazia
+            GestorMarcacoes gestorMarcacoes = new GestorMarcacoes();
+            List<Consulta> consultas = gestorMarcacoes.ObterPesquisadorMarcacoes().ObterConsultasPaciente(2);
+            if (consultas.Count != 0)
             {
-                while (i < 10) //existirem linhas
+                for(int i = 0; i < consultas.Count; i++)
                 {
-                    listBox1.Items.Add("Chupa aqui!");
-                    i++;
+                    listBox1.Items.Add(consultas[i].ToString());
                 }
             }
             else

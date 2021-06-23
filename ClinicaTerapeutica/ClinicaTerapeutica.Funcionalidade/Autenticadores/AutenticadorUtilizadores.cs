@@ -11,7 +11,7 @@ namespace ClinicaTerapeutica.Funcionalidade.Autenticadores
     class AutenticadorUtilizadores : IAutenticadorUtilizadores
     {
         private GestorPesquisas gestorPesquisas;
-
+        
         public AutenticadorUtilizadores()
         {
             gestorPesquisas = new GestorPesquisas();
