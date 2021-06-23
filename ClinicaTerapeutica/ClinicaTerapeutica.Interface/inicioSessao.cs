@@ -10,22 +10,25 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ClinicaTerapeutica.Interface.Terapeuta;
 using ClinicaTerapeutica.Interface.Paciente;
+using ClinicaTerapeutica.Funcionalidade.Gestores.GestorUtilizadores;
 
 namespace ClinicaTerapeutica.Interface
 {
     public partial class InicioSessao : Form
     {
+        private GestorUtilizadores gestorUtilizadores;
         public InicioSessao()
         {
             InitializeComponent();
+            gestorUtilizadores = new GestorUtilizadores();
         }
 
         public void login()
-        {         
-            if (textBoxUser.Text.Equals("bla") && textBoxPassword.Text.Equals("123")) // Teste!!!
+        {
+            if (checkBoxTerapeuta.Checked)
             {
-                if(checkBoxTerapeuta.Checked)
-                { 
+                if (gestorUtilizadores.ObterAutenticadorUtilizadores().AutenticarTerapeuta(int.Parse(textBoxUser.Text), textBoxPassword.Text)) 
+                {
                     MessageBox.Show("Bem vindo terapeuta!");
 
                     //Transita para o menu inicial do terapeuta
@@ -36,6 +39,14 @@ namespace ClinicaTerapeutica.Interface
                 }
                 else
                 {
+                    MessageBox.Show("Credenciais incorretas!\n" +
+                    "Tente outra vez");
+                }
+            }
+            else
+            {
+                if (gestorUtilizadores.ObterAutenticadorUtilizadores().AutenticarPaciente(int.Parse(textBoxUser.Text), textBoxPassword.Text))
+                {
                     MessageBox.Show("Bem vindo paciente!");
 
                     //Transita para o menu inicial do paciente
@@ -44,13 +55,13 @@ namespace ClinicaTerapeutica.Interface
                     menu.ShowDialog();
                     this.Close();
                 }
-            }
-            else
-            {
-                MessageBox.Show("Credenciais incorretas!\n" +
+                else
+                {
+                    MessageBox.Show("Credenciais incorretas!\n" +
                     "Tente outra vez");
-            }                
-        }
+                }
+            }
+         }
 
         private void button1_Click(object sender, EventArgs e)
         {
