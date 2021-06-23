@@ -1,7 +1,6 @@
 ﻿using ClinicaTerapeutica.Data.Entidades.Modelos;
 using ClinicaTerapeutica.Funcionalidade.Gestores.GestorMarcacoes;
-using ClinicaTerapeutica.Data.Entidades.Modelos;
-using ClinicaTerapeutica.Funcionalidade.Gestores.GestorMarcacoes;using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
