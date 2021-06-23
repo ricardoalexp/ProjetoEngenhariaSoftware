@@ -7,15 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ClinicaTerapeutica.Funcionalidade.CriadorDeUtilizadores;
+using ClinicaTerapeutica.Funcionalidade.Gestores.GestorUtilizadores;
 
 namespace ClinicaTerapeutica.Interface.Terapeuta
 {
     public partial class CriarUtilizadorT : Form
     {
+        private GestorUtilizadores gestorUtilizadores;
         public CriarUtilizadorT()
         {
             InitializeComponent();
+            gestorUtilizadores = new();
         }
 
         private void checkBoxTerapeuta_CheckedChanged(object sender, EventArgs e)
@@ -39,17 +41,16 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
 
         public void criarUtilizador()
         {
-            RegistadorUtilizadores registador = new RegistadorUtilizadores();
 
             if (checkBoxTerapeuta.Checked)
             {
-                registador.RegistarTerapeuta(textBoxUser.Text, textBoxPassword.Text, textBoxDataNasc.Text, textBoxEmail.Text, int.Parse(textBoxTelemovel.Text));
+                gestorUtilizadores.ObterRegistadorUtilizadores().RegistarTerapeuta(textBoxUser.Text, textBoxPassword.Text, textBoxDataNasc.Text, textBoxEmail.Text, int.Parse(textBoxTelemovel.Text));
 
                 MessageBox.Show("Terapeuta inserido com sucesso!");
             }
             else
             {
-                registador.RegistarPaciente(textBoxUser.Text, textBoxPassword.Text, textBoxDataNasc.Text, textBoxEmail.Text, int.Parse(textBoxTelemovel.Text));
+                gestorUtilizadores.ObterRegistadorUtilizadores().RegistarPaciente(textBoxUser.Text, textBoxPassword.Text, textBoxDataNasc.Text, textBoxEmail.Text, int.Parse(textBoxTelemovel.Text));
 
                 MessageBox.Show("Paciente inserido com sucesso!");
             }

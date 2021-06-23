@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ClinicaTerapeutica.Data.Entidades.Modelos;
+using ClinicaTerapeutica.Funcionalidade.Gestores.GestorMarcacoes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,11 +17,12 @@ namespace ClinicaTerapeutica.Interface
         public VerConsultasP()
         {
             InitializeComponent();
+            listaConsultas();
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -34,6 +37,24 @@ namespace ClinicaTerapeutica.Interface
             MenuInicialP menu = new MenuInicialP();
             menu.ShowDialog();
             this.Close();
+        }
+
+        private void listaConsultas()
+        {
+            GestorMarcacoes gestorMarcacoes = new GestorMarcacoes();
+            List<Consulta> consultas = gestorMarcacoes.ObterPesquisadorMarcacoes().ObterConsultasPaciente(2);
+            if (consultas.Count != 0)
+            {
+                for(int i = 0; i < consultas.Count; i++)
+                {
+                    listBox1.Items.Add(consultas[i].ToString());
+                }
+            }
+            else
+            {
+                listBox1.Items.Add("Não tem consultas marcadas");
+            }
+
         }
     }
 }

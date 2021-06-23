@@ -10,24 +10,24 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ClinicaTerapeutica.Interface.Terapeuta;
 using ClinicaTerapeutica.Interface.Paciente;
-using ClinicaTerapeutica.Funcionalidade.Autenticador;
+using ClinicaTerapeutica.Funcionalidade.Gestores.GestorUtilizadores;
 
 namespace ClinicaTerapeutica.Interface
 {
     public partial class InicioSessao : Form
     {
+        private GestorUtilizadores gestorUtilizadores;
         public InicioSessao()
         {
             InitializeComponent();
+            gestorUtilizadores = new GestorUtilizadores();
         }
 
         public void login()
         {
-            Autenticador autenticador = new Autenticador();
-            
             if (checkBoxTerapeuta.Checked)
             {
-                if (autenticador.AutenticarTerapeuta(int.Parse(textBoxUser.Text), textBoxPassword.Text)) 
+                if (gestorUtilizadores.ObterAutenticadorUtilizadores().AutenticarTerapeuta(int.Parse(textBoxUser.Text), textBoxPassword.Text)) 
                 {
                     MessageBox.Show("Bem vindo terapeuta!");
 
@@ -45,7 +45,7 @@ namespace ClinicaTerapeutica.Interface
             }
             else
             {
-                if (autenticador.AutenticarPaciente(int.Parse(textBoxUser.Text), textBoxPassword.Text))
+                if (gestorUtilizadores.ObterAutenticadorUtilizadores().AutenticarPaciente(int.Parse(textBoxUser.Text), textBoxPassword.Text))
                 {
                     MessageBox.Show("Bem vindo paciente!");
 
