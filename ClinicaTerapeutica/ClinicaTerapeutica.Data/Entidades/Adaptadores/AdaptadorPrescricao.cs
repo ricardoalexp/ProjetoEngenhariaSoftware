@@ -11,8 +11,6 @@ namespace ClinicaTerapeutica.Data.Entidades.Adaptadores
 {
     class AdaptadorPrescricao : IAdaptadorPrescricao
     {
-        private ExecutorPesquisas executorPesquisas;
-        private List<Consulta> consultasPaciente;
         public List<Prescricao> DeSqlParaPrescricoes(MySqlDataReader dadosQuery)
         {
             return Converter(dadosQuery);
