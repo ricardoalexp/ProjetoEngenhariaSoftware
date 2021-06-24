@@ -1,7 +1,7 @@
 ﻿
 namespace ClinicaTerapeutica.Interface.Paciente
 {
-    partial class MarcarConsultaP
+    partial class MarcarConsultaT
     {
         /// <summary>
         /// Required designer variable.
@@ -29,30 +29,31 @@ namespace ClinicaTerapeutica.Interface.Paciente
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBoxPassword = new System.Windows.Forms.TextBox();
+            this.textBoxHora = new System.Windows.Forms.TextBox();
             this.horaLabel = new System.Windows.Forms.Label();
             this.titleInicioSessao = new System.Windows.Forms.Label();
             this.dataLabel = new System.Windows.Forms.Label();
-            this.textBoxUser = new System.Windows.Forms.TextBox();
+            this.textBoxData = new System.Windows.Forms.TextBox();
             this.btn_marcar = new System.Windows.Forms.Button();
-            this.terapeutaLabel = new System.Windows.Forms.Label();
-            this.listTerapeutas = new System.Windows.Forms.ListBox();
+            this.pacienteLabel = new System.Windows.Forms.Label();
             this.voltarAtras = new System.Windows.Forms.Button();
+            this.textBoxIdPaciente = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // textBoxPassword
+            // textBoxHora
             // 
-            this.textBoxPassword.Location = new System.Drawing.Point(109, 99);
-            this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.PasswordChar = '*';
-            this.textBoxPassword.Size = new System.Drawing.Size(100, 23);
-            this.textBoxPassword.TabIndex = 12;
+            this.textBoxHora.Location = new System.Drawing.Point(124, 99);
+            this.textBoxHora.Name = "textBoxHora";
+            this.textBoxHora.PasswordChar = '*';
+            this.textBoxHora.Size = new System.Drawing.Size(100, 23);
+            this.textBoxHora.TabIndex = 12;
+            this.textBoxHora.TextChanged += new System.EventHandler(this.textBoxHora_TextChanged);
             // 
             // horaLabel
             // 
             this.horaLabel.AutoSize = true;
             this.horaLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.horaLabel.Location = new System.Drawing.Point(48, 97);
+            this.horaLabel.Location = new System.Drawing.Point(63, 97);
             this.horaLabel.Name = "horaLabel";
             this.horaLabel.Size = new System.Drawing.Size(62, 25);
             this.horaLabel.TabIndex = 11;
@@ -62,7 +63,7 @@ namespace ClinicaTerapeutica.Interface.Paciente
             // 
             this.titleInicioSessao.AutoSize = true;
             this.titleInicioSessao.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.titleInicioSessao.Location = new System.Drawing.Point(62, 9);
+            this.titleInicioSessao.Location = new System.Drawing.Point(77, 9);
             this.titleInicioSessao.Name = "titleInicioSessao";
             this.titleInicioSessao.Size = new System.Drawing.Size(210, 37);
             this.titleInicioSessao.TabIndex = 10;
@@ -72,23 +73,24 @@ namespace ClinicaTerapeutica.Interface.Paciente
             // 
             this.dataLabel.AutoSize = true;
             this.dataLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dataLabel.Location = new System.Drawing.Point(48, 63);
+            this.dataLabel.Location = new System.Drawing.Point(63, 63);
             this.dataLabel.Name = "dataLabel";
             this.dataLabel.Size = new System.Drawing.Size(55, 25);
             this.dataLabel.TabIndex = 9;
             this.dataLabel.Text = "Data:";
             this.dataLabel.Click += new System.EventHandler(this.labelUserId_Click);
             // 
-            // textBoxUser
+            // textBoxData
             // 
-            this.textBoxUser.Location = new System.Drawing.Point(109, 63);
-            this.textBoxUser.Name = "textBoxUser";
-            this.textBoxUser.Size = new System.Drawing.Size(100, 23);
-            this.textBoxUser.TabIndex = 8;
+            this.textBoxData.Location = new System.Drawing.Point(124, 63);
+            this.textBoxData.Name = "textBoxData";
+            this.textBoxData.Size = new System.Drawing.Size(100, 23);
+            this.textBoxData.TabIndex = 8;
+            this.textBoxData.TextChanged += new System.EventHandler(this.textBoxUser_TextChanged);
             // 
             // btn_marcar
             // 
-            this.btn_marcar.Location = new System.Drawing.Point(109, 247);
+            this.btn_marcar.Location = new System.Drawing.Point(124, 184);
             this.btn_marcar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_marcar.Name = "btn_marcar";
             this.btn_marcar.Size = new System.Drawing.Size(127, 22);
@@ -97,29 +99,20 @@ namespace ClinicaTerapeutica.Interface.Paciente
             this.btn_marcar.UseVisualStyleBackColor = true;
             this.btn_marcar.Click += new System.EventHandler(this.btn_marcar_Click);
             // 
-            // terapeutaLabel
+            // pacienteLabel
             // 
-            this.terapeutaLabel.AutoSize = true;
-            this.terapeutaLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.terapeutaLabel.Location = new System.Drawing.Point(6, 133);
-            this.terapeutaLabel.Name = "terapeutaLabel";
-            this.terapeutaLabel.Size = new System.Drawing.Size(104, 25);
-            this.terapeutaLabel.TabIndex = 13;
-            this.terapeutaLabel.Text = "Terapeuta: ";
-            this.terapeutaLabel.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // listTerapeutas
-            // 
-            this.listTerapeutas.FormattingEnabled = true;
-            this.listTerapeutas.ItemHeight = 15;
-            this.listTerapeutas.Location = new System.Drawing.Point(109, 133);
-            this.listTerapeutas.Name = "listTerapeutas";
-            this.listTerapeutas.Size = new System.Drawing.Size(189, 94);
-            this.listTerapeutas.TabIndex = 15;
+            this.pacienteLabel.AutoSize = true;
+            this.pacienteLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.pacienteLabel.Location = new System.Drawing.Point(12, 133);
+            this.pacienteLabel.Name = "pacienteLabel";
+            this.pacienteLabel.Size = new System.Drawing.Size(113, 25);
+            this.pacienteLabel.TabIndex = 13;
+            this.pacienteLabel.Text = "Id Paciente: ";
+            this.pacienteLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // voltarAtras
             // 
-            this.voltarAtras.Location = new System.Drawing.Point(17, 247);
+            this.voltarAtras.Location = new System.Drawing.Point(32, 183);
             this.voltarAtras.Name = "voltarAtras";
             this.voltarAtras.Size = new System.Drawing.Size(75, 23);
             this.voltarAtras.TabIndex = 16;
@@ -127,21 +120,30 @@ namespace ClinicaTerapeutica.Interface.Paciente
             this.voltarAtras.UseVisualStyleBackColor = true;
             this.voltarAtras.Click += new System.EventHandler(this.voltarAtras_Click);
             // 
-            // MarcarConsultaP
+            // textBoxIdPaciente
+            // 
+            this.textBoxIdPaciente.Location = new System.Drawing.Point(124, 135);
+            this.textBoxIdPaciente.Name = "textBoxIdPaciente";
+            this.textBoxIdPaciente.PasswordChar = '*';
+            this.textBoxIdPaciente.Size = new System.Drawing.Size(100, 23);
+            this.textBoxIdPaciente.TabIndex = 17;
+            this.textBoxIdPaciente.TextChanged += new System.EventHandler(this.textBoxIdPaciente_TextChanged);
+            // 
+            // MarcarConsultaT
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(310, 283);
+            this.ClientSize = new System.Drawing.Size(310, 226);
+            this.Controls.Add(this.textBoxIdPaciente);
             this.Controls.Add(this.voltarAtras);
-            this.Controls.Add(this.listTerapeutas);
-            this.Controls.Add(this.terapeutaLabel);
-            this.Controls.Add(this.textBoxPassword);
+            this.Controls.Add(this.pacienteLabel);
+            this.Controls.Add(this.textBoxHora);
             this.Controls.Add(this.horaLabel);
             this.Controls.Add(this.titleInicioSessao);
             this.Controls.Add(this.dataLabel);
-            this.Controls.Add(this.textBoxUser);
+            this.Controls.Add(this.textBoxData);
             this.Controls.Add(this.btn_marcar);
-            this.Name = "MarcarConsultaP";
+            this.Name = "MarcarConsultaT";
             this.Text = "MarcarConsultaP";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -149,14 +151,14 @@ namespace ClinicaTerapeutica.Interface.Paciente
         }
 
         #endregion
-        private System.Windows.Forms.TextBox textBoxPassword;
+        private System.Windows.Forms.TextBox textBoxHora;
         private System.Windows.Forms.Label horaLabel;
         private System.Windows.Forms.Label titleInicioSessao;
         private System.Windows.Forms.Label dataLabel;
-        private System.Windows.Forms.TextBox textBoxUser;
+        private System.Windows.Forms.TextBox textBoxData;
         private System.Windows.Forms.Button btn_marcar;
-        private System.Windows.Forms.Label terapeutaLabel;
-        private System.Windows.Forms.ListBox listTerapeutas;
+        private System.Windows.Forms.Label pacienteLabel;
         private System.Windows.Forms.Button voltarAtras;
+        private System.Windows.Forms.TextBox textBoxIdPaciente;
     }
 }

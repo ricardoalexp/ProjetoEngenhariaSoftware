@@ -17,11 +17,6 @@ namespace ClinicaTerapeutica.Interface.Paciente
             InitializeComponent();
         }
 
-        private void titleTratamentos_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void voltarAtras_Click(object sender, EventArgs e) //Volta atrás para o menu inicial do paciente
         {
             //Transita para o menu inicial do paciente
@@ -35,5 +30,11 @@ namespace ClinicaTerapeutica.Interface.Paciente
         {
 
         }
+        
+        private void titleTratamentos_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
