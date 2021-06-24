@@ -44,5 +44,10 @@ namespace ClinicaTerapeutica.Data.GestorPesquisas.Utilitarios
             querySelecionada = new QueryObterPrescricoesPaciente(id);
             return ExecutarQuery(querySelecionada);
         }
+        public IResultadoQuery ResultadoPodeEliminarConsulta(int idConsulta)
+        {
+            querySelecionada = new QueryPrescricoesDeConsulta(idConsulta);
+            return ExecutarQuery(querySelecionada);
+        }
     }
 }
