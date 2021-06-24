@@ -62,6 +62,7 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
             this.listPerscricoes.Name = "listPerscricoes";
             this.listPerscricoes.Size = new System.Drawing.Size(304, 169);
             this.listPerscricoes.TabIndex = 6;
+            this.listPerscricoes.SelectedIndexChanged += new System.EventHandler(this.listPerscricoes_SelectedIndexChanged);
             // 
             // VerPerscricoesT
             // 
