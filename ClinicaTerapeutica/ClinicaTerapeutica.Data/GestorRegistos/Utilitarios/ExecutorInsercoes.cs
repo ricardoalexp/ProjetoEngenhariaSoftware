@@ -50,5 +50,20 @@ namespace ClinicaTerapeutica.Data.GestorRegistos.Utilitarios
             querySelecionada = new InsercaoPrescricao(validade,comentario,idConsulta);
             return ExecutarInsercao(querySelecionada);
         }
+        public IResultadoInsercao ResultadoInserirMedicamento(int idPrescricao, int idMedicamento)
+        {
+            querySelecionada = new InsercaoMedicamentoEmPrescricao(idPrescricao,idMedicamento);
+            return ExecutarInsercao(querySelecionada);
+        }
+        public IResultadoInsercao ResultadoInserirTratamentoEmPrescricao(int idPrescricao, int idTratamento)
+        {
+            querySelecionada = new InsercaoTratamentoEmPrescricao(idPrescricao,idTratamento);
+            return ExecutarInsercao(querySelecionada);
+        }
+        public IResultadoInsercao ResultadoInserirExercicioEmPrescricao(int idPrescricao, int idExercicio)
+        {
+            querySelecionada = new InsercaoExercicioEmPrescricao(idPrescricao,idExercicio);
+            return ExecutarInsercao(querySelecionada);
+        }
     }
 }

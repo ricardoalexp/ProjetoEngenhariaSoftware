@@ -15,6 +15,8 @@ namespace ClinicaTerapeutica.Data.GestorPesquisas
 
         IPesquisadorPrescricoes pesquisadorPrescricoes;
 
+        IPesquisadorItens pesquisadorItens;
+
         public IPesquisadorUtilizadores ObterPesquisadorUtilizadores()
         {
             if (pesquisadorUtilizadores == null)
@@ -38,6 +40,14 @@ namespace ClinicaTerapeutica.Data.GestorPesquisas
                 pesquisadorPrescricoes = new PesquisadorPrescricoes();
             }
             return pesquisadorPrescricoes;
+        }
+        public IPesquisadorItens ObterPesquisadorItens()
+        {
+            if (pesquisadorItens == null)
+            {
+                pesquisadorItens = new PesquisadorItens();
+            }
+            return pesquisadorItens;
         }
 
     }

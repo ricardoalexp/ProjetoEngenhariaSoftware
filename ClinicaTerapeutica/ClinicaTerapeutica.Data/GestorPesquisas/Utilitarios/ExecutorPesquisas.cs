@@ -49,5 +49,36 @@ namespace ClinicaTerapeutica.Data.GestorPesquisas.Utilitarios
             querySelecionada = new QueryPrescricoesDeConsulta(idConsulta);
             return ExecutarQuery(querySelecionada);
         }
+        public IResultadoQuery ResultadoObterMedicamentos()
+        {
+            querySelecionada = new QueryObterMedicamentos();
+            return ExecutarQuery(querySelecionada);
+        }
+        public IResultadoQuery ResultadoObterTratamentos()
+        {
+            querySelecionada = new QueryObterTratamentos();
+            return ExecutarQuery(querySelecionada);
+        }
+        public IResultadoQuery ResultadoObterExercicios()
+        {
+            querySelecionada = new QueryObterExercicios();
+            return ExecutarQuery(querySelecionada);
+        }
+        public IResultadoQuery ResultadoObterMedicamentosDePrescricao(int idPrescricao)
+        {
+            querySelecionada = new QueryObterMedicamentosPrescricao(idPrescricao);
+            return ExecutarQuery(querySelecionada);
+        }
+        public IResultadoQuery ResultadoObterTratamentosDePrescricao(int idPrescricao)
+        {
+            querySelecionada = new QueryObterTratamentosPrescricao(idPrescricao);
+            return ExecutarQuery(querySelecionada);
+        }
+        public IResultadoQuery ResultadoObterExerciciosDePrescricao(int idPrescricao)
+        {
+            querySelecionada = new QueryObterExerciciosPrescricao(idPrescricao);
+            return ExecutarQuery(querySelecionada);
+        }
+
     }
 }
