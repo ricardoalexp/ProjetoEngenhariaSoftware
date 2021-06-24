@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ClinicaTerapeutica.Funcionalidade.Gestores.GestorItens
 {
-    interface IPesquisadorItens
+    public interface IPesquisadorItens
     {
         List<Medicamento> ObterMedicamentos();
         List<Tratamento> ObterTratamentos();

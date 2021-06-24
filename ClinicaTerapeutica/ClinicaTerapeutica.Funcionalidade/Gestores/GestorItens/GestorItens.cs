@@ -6,8 +6,18 @@ using System.Threading.Tasks;
 
 namespace ClinicaTerapeutica.Funcionalidade.Gestores.GestorItens
 {
-    private IPesquisadorItens pesquisadorItens;
-    class GestorItens
+    
+    public class GestorItens
     {
+        private IPesquisadorItens pesquisadorItens;
+
+        public IPesquisadorItens ObterPesquisadorItens()
+        {
+            if (pesquisadorItens == null)
+            {
+                pesquisadorItens = new PesquisadorItens();
+            }
+            return pesquisadorItens;
+        }
     }
 }
