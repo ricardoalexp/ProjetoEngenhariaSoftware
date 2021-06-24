@@ -52,7 +52,6 @@ namespace ClinicaTerapeutica.Interface.Paciente
             this.listSessoes.Name = "listSessoes";
             this.listSessoes.Size = new System.Drawing.Size(304, 169);
             this.listSessoes.TabIndex = 9;
-            this.listSessoes.SelectedIndexChanged += new System.EventHandler(this.listTratamentos_SelectedIndexChanged);
             // 
             // titleSessoes
             // 
@@ -63,7 +62,6 @@ namespace ClinicaTerapeutica.Interface.Paciente
             this.titleSessoes.Size = new System.Drawing.Size(108, 37);
             this.titleSessoes.TabIndex = 8;
             this.titleSessoes.Text = "Sessões";
-            this.titleSessoes.Click += new System.EventHandler(this.titleTratamentos_Click);
             // 
             // verSessoes
             // 

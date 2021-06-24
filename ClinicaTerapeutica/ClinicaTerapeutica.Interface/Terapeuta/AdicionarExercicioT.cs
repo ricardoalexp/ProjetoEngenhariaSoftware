@@ -17,21 +17,12 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
     {
         private List<Exercicio> exercicios;
         private Prescricao prescricao;
+
         public AdicionarExercicioT(Prescricao prescricao)
         {
             this.prescricao = prescricao;
             InitializeComponent();
             listaExercicios();
-        }
-
-        private void consultasMarcadas_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void AdicionarExercicio_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void voltarAtras_Click(object sender, EventArgs e) //Volta atrás para o menu Prescrição
@@ -43,10 +34,12 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
             this.Close();
         }
 
-        private void ckListExercicios_SelectedIndexChanged(object sender, EventArgs e)
+        private void btnAdicionarExercicio_Click(object sender, EventArgs e)
         {
-            
+            adicionaExercicios();
         }
+
+        //---------------------Métodos-----------------------
 
         private void listaExercicios()
         {
@@ -65,31 +58,22 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
 
         private void adicionaExercicios()
         {
-            //Código da linha de baixo está errado. Corrigir!!
             GestorItens gestorItens = new GestorItens();
-            
+
             for (int i = 0; i < ckListExercicios.Items.Count; i++)
             {
                 if (ckListExercicios.GetItemChecked(i))
                 {
-                    //Adicionar exercicios à prescrição!!
-                    gestorItens.ObterRegistadorItens().RegistarExerciciosEmPrescricao(prescricao.Id,exercicios[i].Id);
-                    
-
-                    //Transita para o menu Prescrição
-                    
+                    //Adiciona exercicios à prescrição
+                    gestorItens.ObterRegistadorItens().RegistarExerciciosEmPrescricao(prescricao.Id, exercicios[i].Id);
                 }
             }
+
             MessageBox.Show("Exercício/s adicionado/s com sucesso");
             this.Hide();
             PerscricaoT menu = new PerscricaoT(prescricao);
             menu.ShowDialog();
             this.Close();
-        }
-
-        private void btnAdicionarExercicio_Click(object sender, EventArgs e)
-        {
-            adicionaExercicios();
         }
     }
 }

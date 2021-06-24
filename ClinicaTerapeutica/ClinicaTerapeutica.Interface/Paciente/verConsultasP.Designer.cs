@@ -44,7 +44,6 @@ namespace ClinicaTerapeutica.Interface
             this.consultasMarcadas.Size = new System.Drawing.Size(198, 30);
             this.consultasMarcadas.TabIndex = 1;
             this.consultasMarcadas.Text = "Consultas marcadas";
-            this.consultasMarcadas.Click += new System.EventHandler(this.label1_Click);
             // 
             // voltarAtras
             // 
@@ -63,7 +62,6 @@ namespace ClinicaTerapeutica.Interface
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.Size = new System.Drawing.Size(314, 220);
             this.checkedListBox1.TabIndex = 3;
-            this.checkedListBox1.SelectedIndexChanged += new System.EventHandler(this.checkedListBox1_SelectedIndexChanged);
             // 
             // desmarcarSelecionadas
             // 

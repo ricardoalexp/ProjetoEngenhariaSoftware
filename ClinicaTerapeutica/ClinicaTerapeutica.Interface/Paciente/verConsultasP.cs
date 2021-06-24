@@ -33,6 +33,13 @@ namespace ClinicaTerapeutica.Interface
             this.Close();
         }
 
+        private void desmarcarSelecionadas_Click(object sender, EventArgs e)
+        {
+            desmarcaConsultas();
+        }
+
+        //---------------------Métodos----------------------------
+
         private void listaConsultas()
         {
             GestorMarcacoes gestorMarcacoes = new GestorMarcacoes();
@@ -67,26 +74,6 @@ namespace ClinicaTerapeutica.Interface
 
             checkedListBox1.Items.Clear();
             listaConsultas();
-        }
-
-        private void desmarcarSelecionadas_Click(object sender, EventArgs e)
-        {
-            desmarcaConsultas();
-        }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

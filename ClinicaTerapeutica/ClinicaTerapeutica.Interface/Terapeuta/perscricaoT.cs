@@ -16,10 +16,8 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
     public partial class PerscricaoT : Form
     {
         private PrescricaoParaMenu prescricao;
-        public PerscricaoT()
-        {
-            //Arranjar!
-        }
+
+        public PerscricaoT() {}
 
         public PerscricaoT(Prescricao prescricao)
         {
@@ -62,18 +60,9 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
             this.Close();
         }
 
-        private void listBoxprescricao_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-        }
         private void listarPrescricao()
         {
             richTextBox1.Text = prescricao.ObterDescricao();
-        }
-
-        private void richTextBox1_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

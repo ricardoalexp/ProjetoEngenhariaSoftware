@@ -74,7 +74,6 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
             this.Controls.Add(this.listPerscricoes);
             this.Name = "VerPerscricoesT";
             this.Text = "verPerscricoesT";
-            this.Load += new System.EventHandler(this.verPerscricoesT_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

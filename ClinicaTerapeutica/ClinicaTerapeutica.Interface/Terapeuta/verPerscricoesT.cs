@@ -24,11 +24,6 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
             listaPrescricoes();            
         }
 
-        private void verPerscricoesT_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void voltarAtras_Click(object sender, EventArgs e) //Volta atrás para o menu inicial do Terapeuta
         {
             //Transita para o menu inicial do Terapeuta

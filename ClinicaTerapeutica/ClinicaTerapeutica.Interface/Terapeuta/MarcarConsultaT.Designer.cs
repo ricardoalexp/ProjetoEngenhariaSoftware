@@ -44,10 +44,8 @@ namespace ClinicaTerapeutica.Interface.Paciente
             // 
             this.textBoxHora.Location = new System.Drawing.Point(124, 99);
             this.textBoxHora.Name = "textBoxHora";
-            this.textBoxHora.PasswordChar = '*';
             this.textBoxHora.Size = new System.Drawing.Size(100, 23);
             this.textBoxHora.TabIndex = 12;
-            this.textBoxHora.TextChanged += new System.EventHandler(this.textBoxHora_TextChanged);
             // 
             // horaLabel
             // 
@@ -78,7 +76,6 @@ namespace ClinicaTerapeutica.Interface.Paciente
             this.dataLabel.Size = new System.Drawing.Size(55, 25);
             this.dataLabel.TabIndex = 9;
             this.dataLabel.Text = "Data:";
-            this.dataLabel.Click += new System.EventHandler(this.labelUserId_Click);
             // 
             // textBoxData
             // 
@@ -86,7 +83,6 @@ namespace ClinicaTerapeutica.Interface.Paciente
             this.textBoxData.Name = "textBoxData";
             this.textBoxData.Size = new System.Drawing.Size(100, 23);
             this.textBoxData.TabIndex = 8;
-            this.textBoxData.TextChanged += new System.EventHandler(this.textBoxUser_TextChanged);
             // 
             // btn_marcar
             // 
@@ -108,7 +104,6 @@ namespace ClinicaTerapeutica.Interface.Paciente
             this.pacienteLabel.Size = new System.Drawing.Size(113, 25);
             this.pacienteLabel.TabIndex = 13;
             this.pacienteLabel.Text = "Id Paciente: ";
-            this.pacienteLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // voltarAtras
             // 
@@ -124,10 +119,8 @@ namespace ClinicaTerapeutica.Interface.Paciente
             // 
             this.textBoxIdPaciente.Location = new System.Drawing.Point(124, 135);
             this.textBoxIdPaciente.Name = "textBoxIdPaciente";
-            this.textBoxIdPaciente.PasswordChar = '*';
             this.textBoxIdPaciente.Size = new System.Drawing.Size(100, 23);
             this.textBoxIdPaciente.TabIndex = 17;
-            this.textBoxIdPaciente.TextChanged += new System.EventHandler(this.textBoxIdPaciente_TextChanged);
             // 
             // MarcarConsultaT
             // 

@@ -34,10 +34,12 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
             this.Close();
         }
 
-        private void ckListMedicamentos_SelectedIndexChanged(object sender, EventArgs e)
+        private void btnAdicionarMedicamento_Click(object sender, EventArgs e)
         {
-            
+            adicionaMedicamentos();
         }
+
+        //---------------------Métodos-----------------------
 
         private void listaMedicamentos()
         {
@@ -64,7 +66,7 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
                 {
                     //Adicionar medicamentos à prescrição!!
                     gestorItens.ObterRegistadorItens().RegistarMedicamentoEmPrescricao(prescricao.Id, medicamentos[i].Id);
-                    
+
                 }
             }
             MessageBox.Show("Medicamento/s adicionado/s com sucesso");
@@ -76,9 +78,5 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
             this.Close();
         }
 
-        private void btnAdicionarMedicamento_Click(object sender, EventArgs e)
-        {
-            adicionaMedicamentos();
-        }
     }
 }

@@ -22,12 +22,6 @@ namespace ClinicaTerapeutica.Interface
             
             GestorPrescricoes gestor = new GestorPrescricoes();
             TextBoxPerscricao.Text = gestor.ObterPrestadorDeUtilitarios().ObterDecoradorPrescricaoParaMenu(prescricao).ObterDescricao();
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void voltarAtras_Click(object sender, EventArgs e) //Volta atrás para o menu Ver Prescrições
@@ -37,11 +31,6 @@ namespace ClinicaTerapeutica.Interface
             VerPerscricoesP menu = new VerPerscricoesP();
             menu.ShowDialog();
             this.Close();
-        }
-
-        private void TextBoxPerscricao_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

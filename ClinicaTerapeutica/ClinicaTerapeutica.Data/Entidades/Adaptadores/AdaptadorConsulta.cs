@@ -14,7 +14,6 @@ namespace ClinicaTerapeutica.Data.Entidades.Adaptadores
         private ExecutorPesquisas executorPesquisas;
         private List<Consulta> consultasPaciente;
 
-
         public List<Consulta> DeSqlParaConsultas(MySqlDataReader dadosQuery)
         {
             return Converter(dadosQuery);
@@ -39,10 +38,7 @@ namespace ClinicaTerapeutica.Data.Entidades.Adaptadores
                 }
                 return lista;
 
-            } else { return new List<Consulta>(); }
-            
-
-
+            } else { return new List<Consulta>(); }            
         }
     }
 }

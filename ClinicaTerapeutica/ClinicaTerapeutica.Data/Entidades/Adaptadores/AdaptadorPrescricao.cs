@@ -33,7 +33,6 @@ namespace ClinicaTerapeutica.Data.Entidades.Adaptadores
                     lista.Add(prescricao);
                 }
                 return lista;
-
             }
             else { return new List<Prescricao>(); }
         }

@@ -44,7 +44,6 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
             this.titleExercícos.Size = new System.Drawing.Size(124, 37);
             this.titleExercícos.TabIndex = 5;
             this.titleExercícos.Text = "Exercícos";
-            this.titleExercícos.Click += new System.EventHandler(this.consultasMarcadas_Click);
             // 
             // voltarAtras
             // 
@@ -76,7 +75,6 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
             this.ckListExercicios.Name = "ckListExercicios";
             this.ckListExercicios.Size = new System.Drawing.Size(357, 224);
             this.ckListExercicios.TabIndex = 8;
-            this.ckListExercicios.SelectedIndexChanged += new System.EventHandler(this.ckListExercicios_SelectedIndexChanged);
             // 
             // AdicionarExercicioT
             // 
@@ -90,7 +88,6 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "AdicionarExercicioT";
             this.Text = "AdicionarExercicio";
-            this.Load += new System.EventHandler(this.AdicionarExercicio_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -29,7 +29,6 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
         /// </summary>
         private void InitializeComponent()
         {
-            this.verSessoes = new System.Windows.Forms.Button();
             this.verTratamentos = new System.Windows.Forms.Button();
             this.marcarConsulta = new System.Windows.Forms.Button();
             this.tituloBemVindo = new System.Windows.Forms.Label();
@@ -38,17 +37,6 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
             this.logOut = new System.Windows.Forms.Button();
             this.criarUtilizador = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // verSessoes
-            // 
-            this.verSessoes.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.verSessoes.Location = new System.Drawing.Point(331, 186);
-            this.verSessoes.Name = "verSessoes";
-            this.verSessoes.Size = new System.Drawing.Size(124, 64);
-            this.verSessoes.TabIndex = 13;
-            this.verSessoes.Text = "Ver sessões";
-            this.verSessoes.UseVisualStyleBackColor = true;
-            this.verSessoes.Click += new System.EventHandler(this.verSessoes_Click);
             // 
             // verTratamentos
             // 
@@ -107,7 +95,7 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
             // logOut
             // 
             this.logOut.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.logOut.Location = new System.Drawing.Point(177, 283);
+            this.logOut.Location = new System.Drawing.Point(331, 186);
             this.logOut.Name = "logOut";
             this.logOut.Size = new System.Drawing.Size(124, 64);
             this.logOut.TabIndex = 14;
@@ -130,10 +118,9 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(474, 370);
+            this.ClientSize = new System.Drawing.Size(474, 277);
             this.Controls.Add(this.criarUtilizador);
             this.Controls.Add(this.logOut);
-            this.Controls.Add(this.verSessoes);
             this.Controls.Add(this.verTratamentos);
             this.Controls.Add(this.marcarConsulta);
             this.Controls.Add(this.tituloBemVindo);
@@ -147,8 +134,6 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
         }
 
         #endregion
-
-        private System.Windows.Forms.Button verSessoes;
         private System.Windows.Forms.Button verTratamentos;
         private System.Windows.Forms.Button marcarConsulta;
         private System.Windows.Forms.Label tituloBemVindo;

@@ -18,15 +18,12 @@ namespace ClinicaTerapeutica.Data.Entidades.Modelos
         public string ObterDescricao()
         {
             return this.ToString();
-
         }
 
         public override string ToString()
         {
             string text = "";
-
             text = "Id : " + Id + ", Consulta: " + IdConsulta + " val.: " + Validade + " - " + Comentario;
-
             return text;
         }
     }

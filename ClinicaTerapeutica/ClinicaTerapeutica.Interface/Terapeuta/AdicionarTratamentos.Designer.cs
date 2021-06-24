@@ -43,7 +43,6 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
             this.ckListTratamentos.Name = "ckListTratamentos";
             this.ckListTratamentos.Size = new System.Drawing.Size(357, 224);
             this.ckListTratamentos.TabIndex = 16;
-            this.ckListTratamentos.SelectedIndexChanged += new System.EventHandler(this.ckListTratamentos_SelectedIndexChanged);
             // 
             // btnAdicionarTratamento
             // 
