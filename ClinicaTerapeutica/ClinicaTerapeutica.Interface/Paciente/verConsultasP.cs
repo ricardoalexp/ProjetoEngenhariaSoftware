@@ -20,18 +20,8 @@ namespace ClinicaTerapeutica.Interface
         public VerConsultasP()
         {
             InitializeComponent();
-            idPaciente = 2;
+            idPaciente = DadosUtilizador.IdUtilizador;
             listaConsultas();
-        }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void voltarAtras_Click(object sender, EventArgs e) //Volta atrás para o menu inicial do paciente
@@ -71,8 +61,7 @@ namespace ClinicaTerapeutica.Interface
                     {
                         gestorMarcacoes.ObterEliminadorMarcacoes().EliminarConsulta(tempId);
                     }
-                    else { MessageBox.Show("A consulta com ID = '" + tempId + "' já tém uma prescrição associada e não pode ser eliminada."); }
-                    
+                    else { MessageBox.Show("A consulta com ID = '" + tempId + "' já tém uma prescrição associada e não pode ser eliminada.");
                 }
             }
 
@@ -80,14 +69,24 @@ namespace ClinicaTerapeutica.Interface
             listaConsultas();
         }
 
-        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-        }
-
         private void desmarcarSelecionadas_Click(object sender, EventArgs e)
         {
             desmarcaConsultas();
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

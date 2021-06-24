@@ -32,10 +32,13 @@ namespace ClinicaTerapeutica.Interface
                     MessageBox.Show("Bem vindo terapeuta!");
 
                     //Transita para o menu inicial do terapeuta
+
+                    DadosUtilizador.IdUtilizador = 2;
                     this.Hide();
                     MenuInicialT menu = new MenuInicialT();
                     menu.ShowDialog();
                     this.Close();
+
                 }
                 else
                 {
@@ -50,6 +53,8 @@ namespace ClinicaTerapeutica.Interface
                     MessageBox.Show("Bem vindo paciente!");
 
                     //Transita para o menu inicial do paciente
+
+                    DadosUtilizador.IdUtilizador = int.Parse(textBoxUser.Text);
                     this.Hide();
                     MenuInicialP menu = new MenuInicialP();
                     menu.ShowDialog();
@@ -65,7 +70,7 @@ namespace ClinicaTerapeutica.Interface
 
         private void button1_Click(object sender, EventArgs e)
         {
-            login();
+            login();            
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

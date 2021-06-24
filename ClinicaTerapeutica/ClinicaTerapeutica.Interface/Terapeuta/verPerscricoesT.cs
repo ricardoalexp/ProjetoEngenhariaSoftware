@@ -21,5 +21,14 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
         {
 
         }
+
+        private void voltarAtras_Click(object sender, EventArgs e) //Volta atrás para o menu inicial do Terapeuta
+        {
+            //Transita para o menu inicial do Terapeuta
+            this.Hide();
+            MenuInicialT menu = new MenuInicialT();
+            menu.ShowDialog();
+            this.Close();
+        }
     }
 }

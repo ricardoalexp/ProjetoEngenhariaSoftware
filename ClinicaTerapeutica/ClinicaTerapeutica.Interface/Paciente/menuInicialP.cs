@@ -27,16 +27,11 @@ namespace ClinicaTerapeutica.Interface
             this.Close();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click_1(object sender, EventArgs e) //Marcar consulta
         {
             //Transita para o menu Marcar consulta
             this.Hide();
-            MarcarConsultaP menu = new MarcarConsultaP();
+            MarcarConsultaT menu = new MarcarConsultaT();
             menu.ShowDialog();
             this.Close();
         }
@@ -76,5 +71,11 @@ namespace ClinicaTerapeutica.Interface
             menu.ShowDialog();
             this.Close();
         }
+        
+        private void label1_Click(object sender, EventArgs e) //Não faz nada!!!
+        {
+
+        }
+
     }
 }
