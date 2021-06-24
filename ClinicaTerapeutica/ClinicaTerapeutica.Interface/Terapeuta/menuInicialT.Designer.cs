@@ -31,7 +31,6 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
         {
             this.verSessoes = new System.Windows.Forms.Button();
             this.verTratamentos = new System.Windows.Forms.Button();
-            this.desmarcarConsulta = new System.Windows.Forms.Button();
             this.marcarConsulta = new System.Windows.Forms.Button();
             this.tituloBemVindo = new System.Windows.Forms.Label();
             this.verPerscricoes = new System.Windows.Forms.Button();
@@ -49,6 +48,7 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
             this.verSessoes.TabIndex = 13;
             this.verSessoes.Text = "Ver sessões";
             this.verSessoes.UseVisualStyleBackColor = true;
+            this.verSessoes.Click += new System.EventHandler(this.verSessoes_Click);
             // 
             // verTratamentos
             // 
@@ -59,16 +59,7 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
             this.verTratamentos.TabIndex = 12;
             this.verTratamentos.Text = "Ver tratamentos";
             this.verTratamentos.UseVisualStyleBackColor = true;
-            // 
-            // desmarcarConsulta
-            // 
-            this.desmarcarConsulta.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.desmarcarConsulta.Location = new System.Drawing.Point(177, 186);
-            this.desmarcarConsulta.Name = "desmarcarConsulta";
-            this.desmarcarConsulta.Size = new System.Drawing.Size(124, 64);
-            this.desmarcarConsulta.TabIndex = 11;
-            this.desmarcarConsulta.Text = "Desmarcar Consulta";
-            this.desmarcarConsulta.UseVisualStyleBackColor = true;
+            this.verTratamentos.Click += new System.EventHandler(this.verTratamentos_Click);
             // 
             // marcarConsulta
             // 
@@ -79,6 +70,7 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
             this.marcarConsulta.TabIndex = 10;
             this.marcarConsulta.Text = "Marcar consulta";
             this.marcarConsulta.UseVisualStyleBackColor = true;
+            this.marcarConsulta.Click += new System.EventHandler(this.marcarConsulta_Click);
             // 
             // tituloBemVindo
             // 
@@ -99,6 +91,7 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
             this.verPerscricoes.TabIndex = 8;
             this.verPerscricoes.Text = "Ver perscrições";
             this.verPerscricoes.UseVisualStyleBackColor = true;
+            this.verPerscricoes.Click += new System.EventHandler(this.verPerscricoes_Click);
             // 
             // verConsultas
             // 
@@ -109,11 +102,12 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
             this.verConsultas.TabIndex = 7;
             this.verConsultas.Text = "Ver consultas";
             this.verConsultas.UseVisualStyleBackColor = true;
+            this.verConsultas.Click += new System.EventHandler(this.verConsultas_Click);
             // 
             // logOut
             // 
             this.logOut.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.logOut.Location = new System.Drawing.Point(331, 282);
+            this.logOut.Location = new System.Drawing.Point(177, 283);
             this.logOut.Name = "logOut";
             this.logOut.Size = new System.Drawing.Size(124, 64);
             this.logOut.TabIndex = 14;
@@ -124,7 +118,7 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
             // criarUtilizador
             // 
             this.criarUtilizador.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.criarUtilizador.Location = new System.Drawing.Point(177, 282);
+            this.criarUtilizador.Location = new System.Drawing.Point(177, 186);
             this.criarUtilizador.Name = "criarUtilizador";
             this.criarUtilizador.Size = new System.Drawing.Size(124, 64);
             this.criarUtilizador.TabIndex = 15;
@@ -141,7 +135,6 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
             this.Controls.Add(this.logOut);
             this.Controls.Add(this.verSessoes);
             this.Controls.Add(this.verTratamentos);
-            this.Controls.Add(this.desmarcarConsulta);
             this.Controls.Add(this.marcarConsulta);
             this.Controls.Add(this.tituloBemVindo);
             this.Controls.Add(this.verPerscricoes);
@@ -157,7 +150,6 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
 
         private System.Windows.Forms.Button verSessoes;
         private System.Windows.Forms.Button verTratamentos;
-        private System.Windows.Forms.Button desmarcarConsulta;
         private System.Windows.Forms.Button marcarConsulta;
         private System.Windows.Forms.Label tituloBemVindo;
         private System.Windows.Forms.Button verPerscricoes;

@@ -62,8 +62,9 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(313, 199);
             this.listBox1.TabIndex = 3;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
-            // verConsultasT
+            // VerConsultasT
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -71,7 +72,7 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
             this.Controls.Add(this.voltarAtras);
             this.Controls.Add(this.consultasMarcadas);
             this.Controls.Add(this.listBox1);
-            this.Name = "verConsultasT";
+            this.Name = "VerConsultasT";
             this.Text = "verConsultas";
             this.ResumeLayout(false);
             this.PerformLayout();

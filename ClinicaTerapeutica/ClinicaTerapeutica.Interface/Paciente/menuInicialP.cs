@@ -31,7 +31,7 @@ namespace ClinicaTerapeutica.Interface
         {
             //Transita para o menu Marcar consulta
             this.Hide();
-            MarcarConsultaP menu = new MarcarConsultaP();
+            MarcarConsultaT menu = new MarcarConsultaT();
             menu.ShowDialog();
             this.Close();
         }

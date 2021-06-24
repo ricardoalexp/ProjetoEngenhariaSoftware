@@ -4,7 +4,7 @@
     <Compile Update="InicioSessao.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Paciente\MarcarConsultaP.cs">
+    <Compile Update="Terapeuta\MarcarConsultaT.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Paciente\MenuInicialP.cs">

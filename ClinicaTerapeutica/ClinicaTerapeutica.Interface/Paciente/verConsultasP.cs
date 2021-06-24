@@ -18,7 +18,7 @@ namespace ClinicaTerapeutica.Interface
         public VerConsultasP()
         {
             InitializeComponent();
-            idPaciente = 2;
+            idPaciente = DadosUtilizador.IdUtilizador;
             listaConsultas();
         }
 
