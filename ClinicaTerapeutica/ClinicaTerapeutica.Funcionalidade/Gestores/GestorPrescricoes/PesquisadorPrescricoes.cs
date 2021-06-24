@@ -17,5 +17,11 @@ namespace ClinicaTerapeutica.Funcionalidade.Gestores.GestorPrescricoes
             gestorPesquisas = new GestorPesquisas();
             return gestorPesquisas.ObterPesquisadorPrescricoes().ObterPrescricoesPaciente(id);
         }
+
+        public List<Prescricao> ObterPrescricoesTerapeuta(int id)
+        {
+            gestorPesquisas = new GestorPesquisas();
+            return gestorPesquisas.ObterPesquisadorPrescricoes().ObterPrescricoesTerapeuta(id);
+        }
     }
 }

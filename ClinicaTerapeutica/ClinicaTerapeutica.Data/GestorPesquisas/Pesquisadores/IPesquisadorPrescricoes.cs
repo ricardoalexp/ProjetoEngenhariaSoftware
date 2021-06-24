@@ -10,5 +10,7 @@ namespace ClinicaTerapeutica.Data.GestorPesquisas.Pesquisadores
     public interface IPesquisadorPrescricoes
     {
         List<Prescricao> ObterPrescricoesPaciente(int id);
+
+        List<Prescricao> ObterPrescricoesTerapeuta(int id);
     }
 }

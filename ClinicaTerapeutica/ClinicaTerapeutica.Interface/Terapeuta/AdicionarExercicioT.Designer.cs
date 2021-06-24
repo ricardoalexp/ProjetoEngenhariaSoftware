@@ -39,18 +39,19 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
             // 
             this.titleExercícos.AutoSize = true;
             this.titleExercícos.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.titleExercícos.Location = new System.Drawing.Point(12, 9);
+            this.titleExercícos.Location = new System.Drawing.Point(14, 12);
             this.titleExercícos.Name = "titleExercícos";
-            this.titleExercícos.Size = new System.Drawing.Size(98, 30);
+            this.titleExercícos.Size = new System.Drawing.Size(124, 37);
             this.titleExercícos.TabIndex = 5;
             this.titleExercícos.Text = "Exercícos";
             this.titleExercícos.Click += new System.EventHandler(this.consultasMarcadas_Click);
             // 
             // voltarAtras
             // 
-            this.voltarAtras.Location = new System.Drawing.Point(12, 258);
+            this.voltarAtras.Location = new System.Drawing.Point(14, 344);
+            this.voltarAtras.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.voltarAtras.Name = "voltarAtras";
-            this.voltarAtras.Size = new System.Drawing.Size(75, 23);
+            this.voltarAtras.Size = new System.Drawing.Size(86, 31);
             this.voltarAtras.TabIndex = 6;
             this.voltarAtras.Text = "Voltar atrás";
             this.voltarAtras.UseVisualStyleBackColor = true;
@@ -58,32 +59,36 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
             // 
             // btnAdicionarExercicio
             // 
-            this.btnAdicionarExercicio.Location = new System.Drawing.Point(236, 258);
+            this.btnAdicionarExercicio.Location = new System.Drawing.Point(270, 344);
+            this.btnAdicionarExercicio.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAdicionarExercicio.Name = "btnAdicionarExercicio";
-            this.btnAdicionarExercicio.Size = new System.Drawing.Size(89, 58);
+            this.btnAdicionarExercicio.Size = new System.Drawing.Size(102, 77);
             this.btnAdicionarExercicio.TabIndex = 7;
             this.btnAdicionarExercicio.Text = "Adicionar Exercícios Selecionados";
             this.btnAdicionarExercicio.UseVisualStyleBackColor = true;
+            this.btnAdicionarExercicio.Click += new System.EventHandler(this.btnAdicionarExercicio_Click);
             // 
             // ckListExercicios
             // 
             this.ckListExercicios.FormattingEnabled = true;
-            this.ckListExercicios.Location = new System.Drawing.Point(12, 59);
+            this.ckListExercicios.Location = new System.Drawing.Point(14, 79);
+            this.ckListExercicios.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ckListExercicios.Name = "ckListExercicios";
-            this.ckListExercicios.Size = new System.Drawing.Size(313, 184);
+            this.ckListExercicios.Size = new System.Drawing.Size(357, 224);
             this.ckListExercicios.TabIndex = 8;
             this.ckListExercicios.SelectedIndexChanged += new System.EventHandler(this.ckListExercicios_SelectedIndexChanged);
             // 
-            // AdicionarExercicio
+            // AdicionarExercicioT
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(348, 339);
+            this.ClientSize = new System.Drawing.Size(398, 452);
             this.Controls.Add(this.ckListExercicios);
             this.Controls.Add(this.btnAdicionarExercicio);
             this.Controls.Add(this.voltarAtras);
             this.Controls.Add(this.titleExercícos);
-            this.Name = "AdicionarExercicio";
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Name = "AdicionarExercicioT";
             this.Text = "AdicionarExercicio";
             this.Load += new System.EventHandler(this.AdicionarExercicio_Load);
             this.ResumeLayout(false);

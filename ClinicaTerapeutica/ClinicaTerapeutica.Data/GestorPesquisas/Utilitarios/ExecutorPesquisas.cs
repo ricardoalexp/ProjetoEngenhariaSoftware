@@ -27,6 +27,11 @@ namespace ClinicaTerapeutica.Data.GestorPesquisas.Utilitarios
             querySelecionada = new QueryObterConsultasPaciente(id);
             return ExecutarQuery(querySelecionada);
         }
+        public IResultadoQuery ResultadoObterConsultasTerapeuta(int id)
+        {
+            querySelecionada = new QueryObterConsultasTerapeuta(id);
+            return ExecutarQuery(querySelecionada);
+        }
 
         public IResultadoQuery ResultadoAutenticarPaciente(int id, string password)
         {
@@ -42,6 +47,11 @@ namespace ClinicaTerapeutica.Data.GestorPesquisas.Utilitarios
         public IResultadoQuery ResultadoObterPrescricoesPaciente(int id)
         {
             querySelecionada = new QueryObterPrescricoesPaciente(id);
+            return ExecutarQuery(querySelecionada);
+        }
+        public IResultadoQuery ResultadoObterPrescricoesTerapeuta(int id)
+        {
+            querySelecionada = new QueryObterPrescricoesTerapeuta(id);
             return ExecutarQuery(querySelecionada);
         }
         public IResultadoQuery ResultadoPodeEliminarConsulta(int idConsulta)

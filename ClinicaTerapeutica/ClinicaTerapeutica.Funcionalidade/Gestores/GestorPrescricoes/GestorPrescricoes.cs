@@ -13,6 +13,7 @@ namespace ClinicaTerapeutica.Funcionalidade.Gestores.GestorPrescricoes
 
         private IPesquisadorPrescricoes pesquisadorPrescricoes;
 
+        private IPrestadorDeUtilitarios prestadorDeUtilitarios;
         public IRegistadorPrescricoes ObterRegistadorPrescricoes()
         {
             if (registadorPrescricoes == null)
@@ -28,6 +29,14 @@ namespace ClinicaTerapeutica.Funcionalidade.Gestores.GestorPrescricoes
                 pesquisadorPrescricoes = new PesquisadorPrescricoes();
             }
             return pesquisadorPrescricoes;
+        }
+        public IPrestadorDeUtilitarios ObterPrestadorDeUtilitarios()
+        {
+            if (prestadorDeUtilitarios == null)
+            {
+                prestadorDeUtilitarios = new PrestadorDeUtilitarios();
+            }
+            return prestadorDeUtilitarios;
         }
     }
 }

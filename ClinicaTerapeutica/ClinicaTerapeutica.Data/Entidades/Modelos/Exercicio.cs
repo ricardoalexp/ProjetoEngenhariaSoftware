@@ -13,5 +13,10 @@ namespace ClinicaTerapeutica.Data.Entidades.Modelos
         public bool Privado { get; set; }
         public string Descricao { get; set; }
         public int Duracao { get; set; }
+
+        public override string ToString()
+        {
+            return Nome + ": " + Descricao + ", " + Duracao;
+        }
     }
 }

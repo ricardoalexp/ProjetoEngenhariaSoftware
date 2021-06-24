@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ClinicaTerapeutica.Data.Entidades.Modelos;
+using ClinicaTerapeutica.Funcionalidade.Gestores.GestorPrescricoes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,13 +15,13 @@ namespace ClinicaTerapeutica.Interface
 
     public partial class PerscricaoP : Form
     {
-        private int idPrescricao;
 
-        public PerscricaoP(int idPrescricao)
+        public PerscricaoP(Prescricao prescricao)
         {
             InitializeComponent();
-            this.idPrescricao = idPrescricao;
-            MessageBox.Show(idPrescricao.ToString());
+            
+            GestorPrescricoes gestor = new GestorPrescricoes();
+            TextBoxPerscricao.Text = gestor.ObterPrestadorDeUtilitarios().ObterDecoradorPrescricaoParaMenu(prescricao).ObterDescricao();
 
         }
 

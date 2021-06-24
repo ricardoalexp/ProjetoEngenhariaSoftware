@@ -20,14 +20,22 @@ namespace ClinicaTerapeutica.Data.GestorEliminacoes.Utilitarios
             MySqlCommand commandDatabase = new MySqlCommand(querySelecionada.ObterQuery(), conexao);
 
             int rows;
-            if ((rows = commandDatabase.ExecuteNonQuery()) > 0)
+            try
             {
-                return new ResultadoEliminacao(true);
+                if ((rows = commandDatabase.ExecuteNonQuery()) > 0)
+                {
+                    return new ResultadoEliminacao(true);
+                }
+                else
+                {
+                    return new ResultadoEliminacao(false);
+                }
             }
-            else
+            catch
             {
                 return new ResultadoEliminacao(false);
             }
+            
         }
 
         public IResultadoEliminacao EliminarConsulta(int idConsulta)

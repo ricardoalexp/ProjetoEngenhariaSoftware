@@ -33,7 +33,7 @@ namespace ClinicaTerapeutica.Interface
 
                     //Transita para o menu inicial do terapeuta
 
-                    DadosUtilizador.IdUtilizador = 2;
+                    DadosUtilizador.IdUtilizador = int.Parse(textBoxUser.Text);
                     this.Hide();
                     MenuInicialT menu = new MenuInicialT();
                     menu.ShowDialog();

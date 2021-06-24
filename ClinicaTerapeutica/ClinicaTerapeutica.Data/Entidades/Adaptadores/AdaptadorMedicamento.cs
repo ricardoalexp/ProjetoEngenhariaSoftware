@@ -29,6 +29,7 @@ namespace ClinicaTerapeutica.Data.Entidades.Adaptadores
                     medicamento.Descricao = dadosQuery.GetString("descricao");
                     medicamento.Dosagem = Convert.ToInt32(dadosQuery.GetString("dosagem"));
                     medicamento.Duracao = Convert.ToInt32(dadosQuery.GetString("duracao"));
+                    lista.Add(medicamento);
                 }
                 return lista;
             }

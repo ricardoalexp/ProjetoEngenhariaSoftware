@@ -20,14 +20,22 @@ namespace ClinicaTerapeutica.Data.GestorRegistos.Utilitarios
             MySqlCommand commandDatabase = new MySqlCommand(queryAlterada, conexao);
 
             int newId;
-            if ((newId = Convert.ToInt32(commandDatabase.ExecuteScalar())) > 0)
+            try
             {
-                return new ResultadoInsercao(newId);
+                if ((newId = Convert.ToInt32(commandDatabase.ExecuteScalar())) > 0)
+                {
+                    return new ResultadoInsercao(newId);
+                }
+                else
+                {
+                    return new ResultadoInsercao(0);
+                }
             }
-            else
+            catch
             {
                 return new ResultadoInsercao(0);
             }
+            
         }
         public IResultadoInsercao ResultadoInserirPaciente(string nome, string password, string dataNascimento, string email, int telefone)
         {
@@ -50,7 +58,7 @@ namespace ClinicaTerapeutica.Data.GestorRegistos.Utilitarios
             querySelecionada = new InsercaoPrescricao(validade,comentario,idConsulta);
             return ExecutarInsercao(querySelecionada);
         }
-        public IResultadoInsercao ResultadoInserirMedicamento(int idPrescricao, int idMedicamento)
+        public IResultadoInsercao ResultadoInserirMedicamentoEmPrescricao(int idPrescricao, int idMedicamento)
         {
             querySelecionada = new InsercaoMedicamentoEmPrescricao(idPrescricao,idMedicamento);
             return ExecutarInsercao(querySelecionada);

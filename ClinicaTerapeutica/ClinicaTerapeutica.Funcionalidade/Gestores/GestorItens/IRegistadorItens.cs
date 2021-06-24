@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ClinicaTerapeutica.Data.GestorRegistos.Registadores
+namespace ClinicaTerapeutica.Funcionalidade.Gestores.GestorItens
 {
-    public interface IRegistadorItensEmPrescricoes
+    public interface IRegistadorItens
     {
         bool RegistarMedicamentoEmPrescricao(int idPrescricao, int idMedicamento);
         bool RegistarTratamentoEmPrescricao(int idPrescricao, int idTratamento);

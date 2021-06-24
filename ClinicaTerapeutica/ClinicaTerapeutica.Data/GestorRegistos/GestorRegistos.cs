@@ -15,6 +15,8 @@ namespace ClinicaTerapeutica.Data.GestorRegistos
 
         private IRegistadorPrescricoes registadorPrescricoes;
 
+        private IRegistadorItensEmPrescricoes registadorItens;
+
         public IRegistadorUtilizadores ObterRegistadorUtilizadores()
         {
             if (registadorUtilizadores == null)
@@ -38,6 +40,14 @@ namespace ClinicaTerapeutica.Data.GestorRegistos
                 registadorPrescricoes = new RegistadorPrescricoes();
             }
             return registadorPrescricoes;
+        }
+        public IRegistadorItensEmPrescricoes ObterRegistadorItens()
+        {
+            if (registadorItens == null)
+            {
+                registadorItens = new RegistadorItensEmPrescricoes();
+            }
+            return registadorItens;
         }
     }
 }

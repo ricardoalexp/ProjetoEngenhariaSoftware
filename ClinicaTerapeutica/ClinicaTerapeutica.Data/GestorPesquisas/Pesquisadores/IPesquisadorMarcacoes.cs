@@ -11,6 +11,8 @@ namespace ClinicaTerapeutica.Data.GestorPesquisas.Pesquisadores
     {
         List<Consulta> ObterConsultasPaciente(int idPaciente);
 
+        List<Consulta> ObterConsultasTerapeuta(int idPaciente);
+
         bool PodeEliminarConsulta(int idConsulta);
     }
 }

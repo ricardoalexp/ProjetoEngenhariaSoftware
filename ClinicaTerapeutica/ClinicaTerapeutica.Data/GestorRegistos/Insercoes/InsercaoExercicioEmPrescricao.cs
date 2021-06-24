@@ -12,7 +12,7 @@ namespace ClinicaTerapeutica.Data.GestorRegistos.Insercoes
         private string query;
         public InsercaoExercicioEmPrescricao(int idPrescricao, int idExercicio)
         {
-            this.query = "INSERT INTO prescricao_has_medicamento VALUES (" + idPrescricao + "," + idExercicio + ");";
+            this.query = "INSERT INTO prescricao_has_exercicio VALUES (" + idPrescricao + "," + idExercicio + ");";
         }
 
         public string ObterQuery()
