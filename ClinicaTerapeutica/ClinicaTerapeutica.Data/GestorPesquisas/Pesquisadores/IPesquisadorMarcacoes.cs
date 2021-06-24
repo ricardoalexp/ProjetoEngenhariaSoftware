@@ -9,6 +9,8 @@ namespace ClinicaTerapeutica.Data.GestorPesquisas.Pesquisadores
 {
     public interface IPesquisadorMarcacoes
     {
-        List<Consulta> ObterConsultasPaciente(int id);
+        List<Consulta> ObterConsultasPaciente(int idPaciente);
+
+        bool PodeEliminarConsulta(int idConsulta);
     }
 }
