@@ -4,6 +4,12 @@
     <Compile Update="InicioSessao.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Terapeuta\AdicionarMedicamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Terapeuta\AdicionarTratamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Terapeuta\MarcarConsultaT.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ClinicaTerapeutica.Data.Entidades.Modelos;
+using ClinicaTerapeutica.Funcionalidade.Gestores.GestorMarcacoes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,14 +9,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ClinicaTerapeutica.Funcionalidade.Gestores.GestorPrescricoes;
 
 namespace ClinicaTerapeutica.Interface.Terapeuta
 {
     public partial class VerPerscricoesT : Form
     {
+        private int idTerapeuta;
         public VerPerscricoesT()
         {
             InitializeComponent();
+            idTerapeuta = DadosUtilizador.IdUtilizador;
+            listaPrescricoes();            
         }
 
         private void verPerscricoesT_Load(object sender, EventArgs e)
@@ -29,6 +35,45 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
             MenuInicialT menu = new MenuInicialT();
             menu.ShowDialog();
             this.Close();
+        }
+
+        private void listPerscricoes_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            prescricaoSelecionada();
+        }
+
+        private void listaPrescricoes()
+        {
+            // O código da linha de baixo está errado. Corrigir!! mudar para terapeuta
+            GestorPrescricoes gestorPrescricoes = new GestorPrescricoes();
+            List<Prescricao> prescricoes = gestorPrescricoes.ObterPesquisadorPrescricoes().ObterPrescricoesPaciente(idTerapeuta);
+
+            if (prescricoes.Count != 0)
+            {
+                for (int i = 0; i < prescricoes.Count; i++)
+                {
+                    listPerscricoes.Items.Add(prescricoes[i].ToString());
+                }
+            }
+            else { MessageBox.Show("Não tem prescições marcadas"); }
+        }
+
+        private void prescricaoSelecionada()
+        {
+            // O código da linha de baixo está errado. Corrigir!! mudar para terapeuta
+            GestorPrescricoes gestorPrescricoes = new GestorPrescricoes();
+            List<Prescricao> prescricoes = gestorPrescricoes.ObterPesquisadorPrescricoes().ObterPrescricoesPaciente(idTerapeuta);
+
+            int indicePrescricaoSelecionada = listPerscricoes.SelectedIndex;
+
+            int idPrescricaoSelecionada = prescricoes[indicePrescricaoSelecionada].Id;
+
+            //Transita para o menu da prescrição selecionada            
+            this.Hide();
+            PerscricaoT menu = new PerscricaoT(idPrescricaoSelecionada);
+            menu.ShowDialog();
+            this.Close();
+
         }
     }
 }
