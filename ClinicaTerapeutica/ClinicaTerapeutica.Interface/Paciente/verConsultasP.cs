@@ -15,6 +15,8 @@ namespace ClinicaTerapeutica.Interface
     public partial class VerConsultasP : Form
     {
         private int idPaciente;
+        private List<Consulta> consultas;
+
         public VerConsultasP()
         {
             InitializeComponent();
@@ -44,7 +46,7 @@ namespace ClinicaTerapeutica.Interface
         private void listaConsultas()
         {
             GestorMarcacoes gestorMarcacoes = new GestorMarcacoes();
-            List<Consulta> consultas = gestorMarcacoes.ObterPesquisadorMarcacoes().ObterConsultasPaciente(idPaciente);
+            consultas = gestorMarcacoes.ObterPesquisadorMarcacoes().ObterConsultasPaciente(idPaciente);
 
             if (consultas.Count != 0)
             {
@@ -58,11 +60,19 @@ namespace ClinicaTerapeutica.Interface
 
         private void desmarcaConsultas()
         {
+            GestorMarcacoes gestorMarcacoes = new GestorMarcacoes();
+
             for (int i = 0; i < checkedListBox1.Items.Count; i++)
             {
                 if (checkedListBox1.GetItemChecked(i))
                 {
-                    //query que remove o elemento i da lista
+                    int tempId = consultas[i].Id;
+                    if (gestorMarcacoes.ObterPesquisadorMarcacoes().PodeEliminarConsulta(tempId))
+                    {
+                        gestorMarcacoes.ObterEliminadorMarcacoes().EliminarConsulta(tempId);
+                    }
+                    else { MessageBox.Show("A consulta com ID = '" + tempId + "' já tém uma prescrição associada e não pode ser eliminada."); }
+                    
                 }
             }
 

@@ -17,5 +17,12 @@ namespace ClinicaTerapeutica.Funcionalidade.Gestores.GestorMarcacoes
 
             return gestorPesquisas.ObterPesquisadorMarcacoes().ObterConsultasPaciente(id);
         }
+
+        public bool PodeEliminarConsulta(int idConsulta)
+        {
+            gestorPesquisas = new();
+
+            return gestorPesquisas.ObterPesquisadorMarcacoes().PodeEliminarConsulta(idConsulta);
+        }
     }
 }

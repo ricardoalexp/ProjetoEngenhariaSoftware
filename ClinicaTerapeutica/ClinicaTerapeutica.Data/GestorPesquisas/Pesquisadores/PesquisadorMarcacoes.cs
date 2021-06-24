@@ -19,5 +19,11 @@ namespace ClinicaTerapeutica.Data.GestorPesquisas.Pesquisadores
 
             return adaptador.DeSqlParaConsultas(executorPesquisas.ResultadoObterConsultasPaciente(id).ObterResultado());
         }
+
+        public bool PodeEliminarConsulta(int idConsulta)
+        {
+            executorPesquisas = new ExecutorPesquisas();
+            return executorPesquisas.ResultadoPodeEliminarConsulta(idConsulta).ObterResultado().HasRows ? false : true;
+        }
     }
 }

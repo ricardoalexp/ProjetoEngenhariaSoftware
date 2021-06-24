@@ -7,18 +7,18 @@ using System.Threading.Tasks;
 
 namespace ClinicaTerapeutica.Data.GestorPesquisas.Pesquisas
 {
-    class QueryObterConsultasPaciente : IQuery
+    class QueryPrescricoesDeConsulta : IQuery
     {
         private string query;
 
-        public QueryObterConsultasPaciente(int idPaciente)
+        public QueryPrescricoesDeConsulta(int idConsulta)
         {
-            query = "SELECT * FROM consulta WHERE paciente_utilizador_id = " + idPaciente;
+            this.query = "SELECT * FROM prescricao WHERE consulta_id = " + idConsulta;
         }
 
         public string ObterQuery()
         {
-            return this.query;
+            return query;
         }
     }
 }

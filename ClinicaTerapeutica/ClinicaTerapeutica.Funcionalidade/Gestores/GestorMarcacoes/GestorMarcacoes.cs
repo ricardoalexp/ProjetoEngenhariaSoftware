@@ -12,6 +12,8 @@ namespace ClinicaTerapeutica.Funcionalidade.Gestores.GestorMarcacoes
 
         IRegistadorMarcacoes registadorMarcacoes;
 
+        IEliminadorMarcacoes eliminadorMarcacoes;
+
         public IPesquisadorMarcacoes ObterPesquisadorMarcacoes()
         {
             if (pesquisadorMarcacoes == null)
@@ -28,6 +30,14 @@ namespace ClinicaTerapeutica.Funcionalidade.Gestores.GestorMarcacoes
                 registadorMarcacoes = new RegistadorMarcacoes();
             }
             return registadorMarcacoes;
+        }
+        public IEliminadorMarcacoes ObterEliminadorMarcacoes()
+        {
+            if (eliminadorMarcacoes == null)
+            {
+                eliminadorMarcacoes = new EliminadorMarcacoes();
+            }
+            return eliminadorMarcacoes;
         }
     }
 }

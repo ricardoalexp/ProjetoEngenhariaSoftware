@@ -10,5 +10,7 @@ namespace ClinicaTerapeutica.Funcionalidade.Gestores.GestorMarcacoes
     public interface IPesquisadorMarcacoes
     {
         List<Consulta> ObterConsultasPaciente(int id);
+
+        bool PodeEliminarConsulta(int idConsulta);
     }
 }
