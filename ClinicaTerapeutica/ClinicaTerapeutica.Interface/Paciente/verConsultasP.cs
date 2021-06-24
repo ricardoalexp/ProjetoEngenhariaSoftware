@@ -61,7 +61,7 @@ namespace ClinicaTerapeutica.Interface
                     {
                         gestorMarcacoes.ObterEliminadorMarcacoes().EliminarConsulta(tempId);
                     }
-                    else { MessageBox.Show("A consulta com ID = '" + tempId + "' já tém uma prescrição associada e não pode ser eliminada.");
+                    else { MessageBox.Show("A consulta com ID = '" + tempId + "' já tém uma prescrição associada e não pode ser eliminada."); }
                 }
             }
 

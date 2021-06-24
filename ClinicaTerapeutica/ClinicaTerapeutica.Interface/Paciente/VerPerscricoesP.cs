@@ -44,7 +44,6 @@ namespace ClinicaTerapeutica.Interface
             GestorPrescricoes gestorPrescricoes = new GestorPrescricoes();
             List<Prescricao> prescricoes = gestorPrescricoes.ObterPesquisadorPrescricoes().ObterPrescricoesPaciente(idPaciente);
 
-
             if (prescricoes.Count != 0)
             {
                 for (int i = 0; i < prescricoes.Count; i++)
