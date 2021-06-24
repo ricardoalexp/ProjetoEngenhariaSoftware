@@ -4,6 +4,9 @@
     <Compile Update="InicioSessao.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Terapeuta\AdicionarExercicioT.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Terapeuta\AdicionarMedicamento.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -32,9 +35,6 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Terapeuta\CriarUtilizadorT.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Terapeuta\DesmarcarConsultaT.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Terapeuta\MenuInicialT.cs">

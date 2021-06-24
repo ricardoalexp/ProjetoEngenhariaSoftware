@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ClinicaTerapeutica.Data.Entidades.Modelos;
+using ClinicaTerapeutica.Funcionalidade.Gestores.GestorPrescricoes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,19 +15,13 @@ namespace ClinicaTerapeutica.Interface
 
     public partial class PerscricaoP : Form
     {
-        private int idPrescricao;
 
-        public PerscricaoP(int idPrescricao)
+        public PerscricaoP(Prescricao prescricao)
         {
             InitializeComponent();
-            this.idPrescricao = idPrescricao;
-            MessageBox.Show(idPrescricao.ToString());
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
+            
+            GestorPrescricoes gestor = new GestorPrescricoes();
+            TextBoxPerscricao.Text = gestor.ObterPrestadorDeUtilitarios().ObterDecoradorPrescricaoParaMenu(prescricao).ObterDescricao();
         }
 
         private void voltarAtras_Click(object sender, EventArgs e) //Volta atrás para o menu Ver Prescrições
@@ -35,11 +31,6 @@ namespace ClinicaTerapeutica.Interface
             VerPerscricoesP menu = new VerPerscricoesP();
             menu.ShowDialog();
             this.Close();
-        }
-
-        private void TextBoxPerscricao_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -20,6 +20,14 @@ namespace ClinicaTerapeutica.Data.GestorPesquisas.Pesquisadores
             return adaptador.DeSqlParaConsultas(executorPesquisas.ResultadoObterConsultasPaciente(id).ObterResultado());
         }
 
+        public List<Consulta> ObterConsultasTerapeuta(int id)
+        {
+            IAdaptadorConsulta adaptador = new AdaptadorConsulta();
+            executorPesquisas = new ExecutorPesquisas();
+
+            return adaptador.DeSqlParaConsultas(executorPesquisas.ResultadoObterConsultasTerapeuta(id).ObterResultado());
+        }
+
         public bool PodeEliminarConsulta(int idConsulta)
         {
             executorPesquisas = new ExecutorPesquisas();

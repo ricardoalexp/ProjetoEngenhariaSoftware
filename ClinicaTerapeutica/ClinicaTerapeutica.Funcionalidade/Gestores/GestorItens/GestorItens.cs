@@ -11,6 +11,8 @@ namespace ClinicaTerapeutica.Funcionalidade.Gestores.GestorItens
     {
         private IPesquisadorItens pesquisadorItens;
 
+        private IRegistadorItens registadorItens;
+
         public IPesquisadorItens ObterPesquisadorItens()
         {
             if (pesquisadorItens == null)
@@ -18,6 +20,14 @@ namespace ClinicaTerapeutica.Funcionalidade.Gestores.GestorItens
                 pesquisadorItens = new PesquisadorItens();
             }
             return pesquisadorItens;
+        }
+        public IRegistadorItens ObterRegistadorItens()
+        {
+            if (registadorItens == null)
+            {
+                registadorItens = new RegistadorItens();
+            }
+            return registadorItens;
         }
     }
 }

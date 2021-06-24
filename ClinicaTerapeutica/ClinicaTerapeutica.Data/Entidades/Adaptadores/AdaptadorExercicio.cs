@@ -12,7 +12,7 @@ namespace ClinicaTerapeutica.Data.Entidades.Adaptadores
     {
         public List<Exercicio> DeSqlParaExercicios(MySqlDataReader dadosQuery)
         {
-            throw new NotImplementedException();
+            return Converter(dadosQuery);
         }
         public List<Exercicio> Converter(MySqlDataReader dadosQuery)
         {
@@ -27,7 +27,8 @@ namespace ClinicaTerapeutica.Data.Entidades.Adaptadores
                     exercicio.Nome = dadosQuery.GetString("nome");
                     exercicio.Privado = dadosQuery.GetString("privado").Equals("1") ? true : false;
                     exercicio.Descricao = dadosQuery.GetString("descricao");
-                    exercicio.Duracao = Convert.ToInt32(dadosQuery.GetString("num_sessoes"));
+                    exercicio.Duracao = Convert.ToInt32(dadosQuery.GetString("duracao"));
+                    lista.Add(exercicio);
                 }
                 return lista;
             }

@@ -16,6 +16,7 @@ namespace ClinicaTerapeutica.Interface
     public partial class VerPerscricoesP : Form
     {
         private int idPaciente;
+        private List<Prescricao> prescricoes;
 
         public VerPerscricoesP()
         {
@@ -38,12 +39,12 @@ namespace ClinicaTerapeutica.Interface
             abrePrescricao();
         }
 
+        //---------------------Métodos----------------------------
+
         private void listaPrescricoes()
         {
-            // O código da linha de baixo está errado. Corrigir!!
             GestorPrescricoes gestorPrescricoes = new GestorPrescricoes();
-            List<Prescricao> prescricoes = gestorPrescricoes.ObterPesquisadorPrescricoes().ObterPrescricoesPaciente(idPaciente);
-
+            prescricoes = gestorPrescricoes.ObterPesquisadorPrescricoes().ObterPrescricoesPaciente(idPaciente);
 
             if (prescricoes.Count != 0)
             {
@@ -57,26 +58,16 @@ namespace ClinicaTerapeutica.Interface
 
         private void abrePrescricao()
         {
-            if (listPerscricoes.Items.Count > 0)
+            int selectedItem = listPerscricoes.SelectedIndex;
+            if (listPerscricoes.Items.Count > 0 && selectedItem > 0)
             {
-                int selectedItem = listPerscricoes.SelectedIndex;
-                
                 this.Hide();
-                PerscricaoP menu = new PerscricaoP(selectedItem);
+                PerscricaoP menu = new PerscricaoP(prescricoes[selectedItem]);
                 menu.ShowDialog();
                 this.Close();
 
                 MessageBox.Show("Prescrição " + selectedItem.ToString() + "selecionada");
-            }
-            else { MessageBox.Show("Não tem prescrições"); }
-            
-
+            }    
         }
-
-        private void VerPerscricoesP_Load(object sender, EventArgs e)
-        {
-
-        }
-
     }
 }

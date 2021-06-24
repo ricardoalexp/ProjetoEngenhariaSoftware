@@ -20,5 +20,12 @@ namespace ClinicaTerapeutica.Data.GestorPesquisas.Pesquisadores
 
             return adaptador.DeSqlParaPrescricoes(executorPesquisas.ResultadoObterPrescricoesPaciente(id).ObterResultado());
         }
+        public List<Prescricao> ObterPrescricoesTerapeuta(int id)
+        {
+            executorPesquisas = new ExecutorPesquisas();
+            IAdaptadorPrescricao adaptador = new AdaptadorPrescricao();
+
+            return adaptador.DeSqlParaPrescricoes(executorPesquisas.ResultadoObterPrescricoesTerapeuta(id).ObterResultado());
+        }
     }
 }

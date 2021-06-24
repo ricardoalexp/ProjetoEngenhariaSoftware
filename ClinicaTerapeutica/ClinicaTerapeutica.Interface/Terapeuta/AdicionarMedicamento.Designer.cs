@@ -38,26 +38,29 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
             // ckListMedicamentos
             // 
             this.ckListMedicamentos.FormattingEnabled = true;
-            this.ckListMedicamentos.Location = new System.Drawing.Point(12, 61);
+            this.ckListMedicamentos.Location = new System.Drawing.Point(14, 81);
+            this.ckListMedicamentos.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ckListMedicamentos.Name = "ckListMedicamentos";
-            this.ckListMedicamentos.Size = new System.Drawing.Size(313, 184);
+            this.ckListMedicamentos.Size = new System.Drawing.Size(357, 224);
             this.ckListMedicamentos.TabIndex = 12;
-            this.ckListMedicamentos.SelectedIndexChanged += new System.EventHandler(this.ckListMedicamentos_SelectedIndexChanged);
             // 
             // btnAdicionarMedicamento
             // 
-            this.btnAdicionarMedicamento.Location = new System.Drawing.Point(231, 260);
+            this.btnAdicionarMedicamento.Location = new System.Drawing.Point(264, 347);
+            this.btnAdicionarMedicamento.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAdicionarMedicamento.Name = "btnAdicionarMedicamento";
-            this.btnAdicionarMedicamento.Size = new System.Drawing.Size(94, 59);
+            this.btnAdicionarMedicamento.Size = new System.Drawing.Size(107, 79);
             this.btnAdicionarMedicamento.TabIndex = 11;
             this.btnAdicionarMedicamento.Text = "Adicionar Medicamentos Selecionados";
             this.btnAdicionarMedicamento.UseVisualStyleBackColor = true;
+            this.btnAdicionarMedicamento.Click += new System.EventHandler(this.btnAdicionarMedicamento_Click);
             // 
             // voltarAtras
             // 
-            this.voltarAtras.Location = new System.Drawing.Point(12, 260);
+            this.voltarAtras.Location = new System.Drawing.Point(14, 347);
+            this.voltarAtras.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.voltarAtras.Name = "voltarAtras";
-            this.voltarAtras.Size = new System.Drawing.Size(75, 23);
+            this.voltarAtras.Size = new System.Drawing.Size(86, 31);
             this.voltarAtras.TabIndex = 10;
             this.voltarAtras.Text = "Voltar atrás";
             this.voltarAtras.UseVisualStyleBackColor = true;
@@ -67,21 +70,22 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
             // 
             this.titleMedicamentos.AutoSize = true;
             this.titleMedicamentos.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.titleMedicamentos.Location = new System.Drawing.Point(12, 11);
+            this.titleMedicamentos.Location = new System.Drawing.Point(14, 15);
             this.titleMedicamentos.Name = "titleMedicamentos";
-            this.titleMedicamentos.Size = new System.Drawing.Size(150, 30);
+            this.titleMedicamentos.Size = new System.Drawing.Size(192, 37);
             this.titleMedicamentos.TabIndex = 9;
             this.titleMedicamentos.Text = "Medicamentos";
             // 
             // AdicionarMedicamento
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(342, 334);
+            this.ClientSize = new System.Drawing.Size(391, 445);
             this.Controls.Add(this.ckListMedicamentos);
             this.Controls.Add(this.btnAdicionarMedicamento);
             this.Controls.Add(this.voltarAtras);
             this.Controls.Add(this.titleMedicamentos);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "AdicionarMedicamento";
             this.Text = "AdicionarMedicamento";
             this.ResumeLayout(false);

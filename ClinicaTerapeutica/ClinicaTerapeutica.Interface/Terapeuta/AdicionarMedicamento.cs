@@ -1,4 +1,5 @@
 ﻿using ClinicaTerapeutica.Data.Entidades.Modelos;
+using ClinicaTerapeutica.Funcionalidade.Gestores.GestorItens;
 using ClinicaTerapeutica.Funcionalidade.Gestores.GestorMarcacoes;
 using System;
 using System.Collections.Generic;
@@ -14,10 +15,12 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
 {
     public partial class AdicionarMedicamento : Form
     {
-        private List<Consulta> medicamentos;
+        private List<Medicamento> medicamentos;
+        private Prescricao prescricao;
 
-        public AdicionarMedicamento()
+        public AdicionarMedicamento(Prescricao prescricao)
         {
+            this.prescricao = prescricao;
             InitializeComponent();
             listaMedicamentos();
         }
@@ -31,16 +34,17 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
             this.Close();
         }
 
-        private void ckListMedicamentos_SelectedIndexChanged(object sender, EventArgs e)
+        private void btnAdicionarMedicamento_Click(object sender, EventArgs e)
         {
             adicionaMedicamentos();
         }
 
+        //---------------------Métodos-----------------------
+
         private void listaMedicamentos()
         {
-            //Código da linha de baixo está errado. Corrigir!!
-            GestorMarcacoes gestorMarcacoes = new GestorMarcacoes();
-            medicamentos = gestorMarcacoes.ObterPesquisadorMarcacoes().ObterConsultasPaciente(2);
+            GestorItens gestorItens = new GestorItens();
+            medicamentos = gestorItens.ObterPesquisadorItens().ObterMedicamentos();
 
             if (medicamentos.Count != 0)
             {
@@ -54,24 +58,25 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
 
         private void adicionaMedicamentos()
         {
-            //Código da linha de baixo está errado. Corrigir!!
-            GestorMarcacoes gestorMarcacoes = new GestorMarcacoes();
+            GestorItens gestorItens = new GestorItens();
 
             for (int i = 0; i < ckListMedicamentos.Items.Count; i++)
             {
                 if (ckListMedicamentos.GetItemChecked(i))
                 {
                     //Adicionar medicamentos à prescrição!!
+                    gestorItens.ObterRegistadorItens().RegistarMedicamentoEmPrescricao(prescricao.Id, medicamentos[i].Id);
 
-                    MessageBox.Show("Medicamento/s adicionado/s com sucesso");
-
-                    //Transita para o menu Prescrição
-                    this.Hide();
-                    PerscricaoT menu = new PerscricaoT();
-                    menu.ShowDialog();
-                    this.Close();
                 }
             }
+            MessageBox.Show("Medicamento/s adicionado/s com sucesso");
+
+            //Transita para o menu Prescrição
+            this.Hide();
+            PerscricaoT menu = new PerscricaoT();
+            menu.ShowDialog();
+            this.Close();
         }
+
     }
 }

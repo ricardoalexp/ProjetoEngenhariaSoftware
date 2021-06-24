@@ -54,7 +54,6 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
             this.checkBoxTerapeuta.TabIndex = 13;
             this.checkBoxTerapeuta.Text = "Terapeuta?";
             this.checkBoxTerapeuta.UseVisualStyleBackColor = true;
-            this.checkBoxTerapeuta.CheckedChanged += new System.EventHandler(this.checkBoxTerapeuta_CheckedChanged);
             // 
             // textBoxPassword
             // 

@@ -16,16 +16,12 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
     public partial class VerPerscricoesT : Form
     {
         private int idTerapeuta;
+        private List<Prescricao> prescricoes;
         public VerPerscricoesT()
         {
             InitializeComponent();
             idTerapeuta = DadosUtilizador.IdUtilizador;
             listaPrescricoes();            
-        }
-
-        private void verPerscricoesT_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void voltarAtras_Click(object sender, EventArgs e) //Volta atrás para o menu inicial do Terapeuta
@@ -46,7 +42,7 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
         {
             // O código da linha de baixo está errado. Corrigir!! mudar para terapeuta
             GestorPrescricoes gestorPrescricoes = new GestorPrescricoes();
-            List<Prescricao> prescricoes = gestorPrescricoes.ObterPesquisadorPrescricoes().ObterPrescricoesPaciente(idTerapeuta);
+            prescricoes = gestorPrescricoes.ObterPesquisadorPrescricoes().ObterPrescricoesTerapeuta(idTerapeuta);
 
             if (prescricoes.Count != 0)
             {
@@ -60,17 +56,12 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
 
         private void prescricaoSelecionada()
         {
-            // O código da linha de baixo está errado. Corrigir!! mudar para terapeuta
-            GestorPrescricoes gestorPrescricoes = new GestorPrescricoes();
-            List<Prescricao> prescricoes = gestorPrescricoes.ObterPesquisadorPrescricoes().ObterPrescricoesPaciente(idTerapeuta);
 
             int indicePrescricaoSelecionada = listPerscricoes.SelectedIndex;
 
-            int idPrescricaoSelecionada = prescricoes[indicePrescricaoSelecionada].Id;
-
             //Transita para o menu da prescrição selecionada            
             this.Hide();
-            PerscricaoT menu = new PerscricaoT(idPrescricaoSelecionada);
+            PerscricaoT menu = new PerscricaoT(prescricoes[indicePrescricaoSelecionada]);
             menu.ShowDialog();
             this.Close();
 

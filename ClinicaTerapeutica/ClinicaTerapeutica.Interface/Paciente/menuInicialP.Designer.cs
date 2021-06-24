@@ -68,7 +68,7 @@ namespace ClinicaTerapeutica.Interface
             this.tituloBemVindo.Size = new System.Drawing.Size(227, 32);
             this.tituloBemVindo.TabIndex = 2;
             this.tituloBemVindo.Text = "Bem vindo paciente";
-            this.tituloBemVindo.Click += new System.EventHandler(this.label1_Click);
+
             // 
             // verTratamentos
             // 
@@ -84,7 +84,7 @@ namespace ClinicaTerapeutica.Interface
             // verSessoes
             // 
             this.verSessoes.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.verSessoes.Location = new System.Drawing.Point(349, 184);
+            this.verSessoes.Location = new System.Drawing.Point(33, 184);
             this.verSessoes.Name = "verSessoes";
             this.verSessoes.Size = new System.Drawing.Size(124, 64);
             this.verSessoes.TabIndex = 6;
@@ -95,7 +95,7 @@ namespace ClinicaTerapeutica.Interface
             // logOut
             // 
             this.logOut.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.logOut.Location = new System.Drawing.Point(195, 273);
+            this.logOut.Location = new System.Drawing.Point(349, 184);
             this.logOut.Name = "logOut";
             this.logOut.Size = new System.Drawing.Size(124, 64);
             this.logOut.TabIndex = 7;
@@ -107,7 +107,7 @@ namespace ClinicaTerapeutica.Interface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(505, 349);
+            this.ClientSize = new System.Drawing.Size(505, 271);
             this.Controls.Add(this.logOut);
             this.Controls.Add(this.verSessoes);
             this.Controls.Add(this.verTratamentos);

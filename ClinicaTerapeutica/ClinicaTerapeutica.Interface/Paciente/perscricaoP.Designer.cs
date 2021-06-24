@@ -58,7 +58,6 @@ namespace ClinicaTerapeutica.Interface
             this.TextBoxPerscricao.Size = new System.Drawing.Size(254, 226);
             this.TextBoxPerscricao.TabIndex = 6;
             this.TextBoxPerscricao.Text = "";
-            this.TextBoxPerscricao.TextChanged += new System.EventHandler(this.TextBoxPerscricao_TextChanged);
             // 
             // titlePerscricao
             // 

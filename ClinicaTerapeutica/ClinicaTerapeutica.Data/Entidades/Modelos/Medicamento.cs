@@ -14,5 +14,11 @@ namespace ClinicaTerapeutica.Data.Entidades.Modelos
         public string Descricao { get; set; }
         public int Dosagem { get; set; }
         public int Duracao { get; set; }
+        public override string ToString()
+        {
+            return Nome + ": " + Dosagem + "mg, " + Duracao + "dias, " + Descricao;
+        }
+
     }
+    
 }

@@ -18,6 +18,13 @@ namespace ClinicaTerapeutica.Funcionalidade.Gestores.GestorMarcacoes
             return gestorPesquisas.ObterPesquisadorMarcacoes().ObterConsultasPaciente(id);
         }
 
+        public List<Consulta> ObterConsultasTerapeuta(int id)
+        {
+            gestorPesquisas = new();
+
+            return gestorPesquisas.ObterPesquisadorMarcacoes().ObterConsultasTerapeuta(id);
+        }
+
         public bool PodeEliminarConsulta(int idConsulta)
         {
             gestorPesquisas = new();

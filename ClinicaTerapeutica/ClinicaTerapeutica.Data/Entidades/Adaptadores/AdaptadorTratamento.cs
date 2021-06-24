@@ -28,6 +28,7 @@ namespace ClinicaTerapeutica.Data.Entidades.Adaptadores
                     tratamento.Privado = dadosQuery.GetString("privado").Equals("1") ? true : false;
                     tratamento.Descricao = dadosQuery.GetString("descricao");
                     tratamento.NumeroSessoes = Convert.ToInt32(dadosQuery.GetString("num_sessoes"));
+                    lista.Add(tratamento);
                 }
                 return lista;
             }

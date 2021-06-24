@@ -18,7 +18,7 @@ namespace ClinicaTerapeutica.Data.GestorRegistos.Registadores
 
             int result = executorQueries.ResultadoInserirConsulta(duracao, data, hora, idPaciente, idTerapeuta).ObterResultado();
 
-            return result == 0 ? true : false;
+            return result != 0 ? true : false;
         }
     }
 }

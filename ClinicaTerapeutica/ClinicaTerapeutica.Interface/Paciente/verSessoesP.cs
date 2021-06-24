@@ -25,16 +25,5 @@ namespace ClinicaTerapeutica.Interface.Paciente
             menu.ShowDialog();
             this.Close();
         }
-
-        private void listTratamentos_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-        
-        private void titleTratamentos_Click(object sender, EventArgs e)
-        {
-
-        }
-
     }
 }

@@ -1,4 +1,7 @@
-﻿using System;
+﻿using ClinicaTerapeutica.Data.Entidades.Decoradores;
+using ClinicaTerapeutica.Data.Entidades.Modelos;
+using ClinicaTerapeutica.Funcionalidade.Gestores.GestorPrescricoes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,16 +14,17 @@ using System.Windows.Forms;
 namespace ClinicaTerapeutica.Interface.Terapeuta
 {
     public partial class PerscricaoT : Form
-    {        public PerscricaoT()
-        {
-            //Arranjar!
-        }
+    {
+        private PrescricaoParaMenu prescricao;
 
-        public PerscricaoT(int idPrescricao)
+        public PerscricaoT() {}
+
+        public PerscricaoT(Prescricao prescricao)
         {
-            int id = idPrescricao;
+            GestorPrescricoes gestor = new GestorPrescricoes();
+            this.prescricao = gestor.ObterPrestadorDeUtilitarios().ObterDecoradorPrescricaoParaMenu(prescricao);
             InitializeComponent();
-            MessageBox.Show("Prescrição " + id + " selecionada");
+            listarPrescricao();
         }
 
         private void voltarAtras_Click(object sender, EventArgs e) //Volta atrás para o menu Ver Prescrições
@@ -34,22 +38,31 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            AdicionarExercicioT menu = new AdicionarExercicioT(prescricao.ObterPrescricao());
+            menu.ShowDialog();
+            this.Close();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            AdicionarTratamentos menu = new AdicionarTratamentos(prescricao.ObterPrescricao());
+            menu.ShowDialog();
+            this.Close();
         }
 
         private void btnAdicionarMedicamento_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            AdicionarMedicamento menu = new AdicionarMedicamento(prescricao.ObterPrescricao());
+            menu.ShowDialog();
+            this.Close();
         }
 
-        private void listBoxprescricao_SelectedIndexChanged(object sender, EventArgs e)
+        private void listarPrescricao()
         {
-
+            richTextBox1.Text = prescricao.ObterDescricao();
         }
     }
 }

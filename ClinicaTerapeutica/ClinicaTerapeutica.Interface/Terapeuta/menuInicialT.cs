@@ -80,11 +80,5 @@ namespace ClinicaTerapeutica.Interface.Terapeuta
             menu.ShowDialog();
             this.Close();
         }
-
-        private void desmarcarConsulta_Click(object sender, EventArgs e) // Não é usado
-        {
-
-        }
-
     }
 }
